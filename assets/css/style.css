@@ -139,7 +139,7 @@ body{
     display: flex;
     background-color: white;
     margin-top: 2%;
-    border-radius: 200px 0 0 0;
+    border-radius: 70px 10% 10% 70px;
     flex-direction: row;
 }
 .titulo-nossa-solucao {
@@ -188,7 +188,7 @@ body{
 } 
 .lado-direito{
     width: 50%;
-    border-radius: 35% 0 0 20%;
+    border-radius: 70% 10% 10% 0%;
     background-color: #00BBFF;
 }
 .botao-saiba-mais {
@@ -204,4 +204,49 @@ body{
     border-radius: 15px;
     font-family: 'JetBrains Mono', monospace;
     border: none;
+}
+
+.titulo-nossa-equipe{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    font-family: 'JetBrains Mono', monospace;
+    
+}
+.titulo-nossa-equipe > h1{
+    font-size: 50px;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+}
+.fotos-integrantes {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3%;
+    justify-content: space-evenly;
+}
+.primeira-sequencia {
+    padding-top: 2%;
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.integrante-kyvo > img{
+    width: 200px;
+    height: 200px;
+    border-radius: 15%;
+}
+.integrante-kyvo > h1 {
+    padding-top: 5%;
+    font-size: 110%;
+}
+
+.integrante-kyvo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    flex-direction: column;
 }
