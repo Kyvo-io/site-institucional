@@ -7,7 +7,7 @@ font-family: 'Laila', sans-serif;
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&family=JetBrains+Mono:wght@100;200;300;400;500;600&family=Laila&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
 
-
+/* Introdução */
 
 body{
     --verde: #4CC977;
@@ -109,6 +109,8 @@ body{
     justify-content: center;
 }
 
+/* Por que kyvo */
+
 .container-por-que-kyvo{ 
     display: flex;
     width: 100%;
@@ -134,6 +136,9 @@ body{
 .container-por-que-kyvo > img{
     width: 50%;
 }
+
+/* Nossa solução */
+
 .container-nossa-solucao{
     width: 100%;
     display: flex;
@@ -206,6 +211,8 @@ body{
     border: none;
 }
 
+/* Conheça a equipe */
+
 .titulo-nossa-equipe{
     display: flex;
     width: 100%;
@@ -250,3 +257,140 @@ body{
     width: 30%;
     flex-direction: column;
 }
+
+/* Contate-nos */
+
+.container-contate-nos{
+    display: flex;
+    height: 700px;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario{
+    display: flex;
+    height: 340px;
+    width: 100%;
+    background-color: #4CC977;
+    gap: 40px;
+}
+
+.mensagem{
+    display: flex;
+    width: 40%;
+    height: 100%;
+    flex-direction: column;
+    font-family: 'JetBrains Mono', monospace;   
+    color: #000000;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+.mensagem p{
+    width: 75%;
+    font-size: 28px;
+
+}
+
+.formulario-contate-nos{
+    display: flex;
+    width: 44%;
+    height: 127%; 
+    margin-top: -50px;
+    background-color: #ffffff;
+    color: #000000;
+    font-family: 'JetBrains Mono', monospace;   
+    flex-direction: column;
+    gap: 20px;
+}
+
+.formulario-contate-nos h2{
+    font-size: 40px;
+    margin-top: 40px;
+    margin-left: 30px;
+}
+
+.conteudo-formulario{
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    width: 100%;
+    justify-content: center;
+    gap: 50px;
+}
+
+.inputs1{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    align-items: center;
+}
+.inputs2{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    align-items: center;
+}
+
+.inputs1 input{
+    width: 85%;
+    height: 40px;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+}
+.inputs2 input{
+    width: 85%;
+    height: 40px;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+}
+.botao{
+    margin-top: 20px;
+    margin-left: 45px;
+}
+
+.botao button{
+    width: 105px;
+    height: 38px;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: #4CC977;
+    border: none;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.inputs1 ::-webkit-input-placeholder {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 16px;
+    color: #000000;
+}
+
+.inputs2 ::-webkit-input-placeholder {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 16px;
+    color: #000000;
+}
+
+.botao button:hover{
+    transform: scale(1.1);
+    transition: all 0.5s;
+    background-color: #88c29c;
+    color: #000000;
+  }
+
+  input:focus{
+    outline: none;
+}
+
+
+
+
+
+
+
+
