@@ -84,21 +84,11 @@ body{
     display: flex;
     justify-content: right;
     width: 100%;
-
     
 }
 
-.text{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    flex-flow: row wrap;
-    width: 90%;
-    background-color: #0BF;
-    border-radius: 100px 0 0 80px;
-}
 
-.text-up{
+.text-up1{
 
     height: 200px;
     width: 100%;
@@ -107,7 +97,7 @@ body{
     border-radius: 100px 0 0 100px;
 }
 
-.text-down{
+.text-down1{
     height: 280px;
     width: 100%;
 }
@@ -121,12 +111,11 @@ body{
     height: 140px;
     width: 300px;
 }
-
 .conteudo{
     display: flex;
     justify-content: center;
     text-align: center;
-
+    
     padding-top: 5%;    
 }
 
@@ -137,8 +126,8 @@ body{
   /* fim css da pagina */
   
 
-  /* css do carrossel */
 
+  /* css do carrossel */
 
   /* css do scroll */
   * {
@@ -192,7 +181,7 @@ body{
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
     width: 80%;
-    margin-left: 21%;
+    margin-left: 19.5%;
   }
   
   /* configuração slides impares */
@@ -208,8 +197,29 @@ body{
   
   /* configurações slides pares */
   .carousel__slide:nth-child(even) {
-    border-radius: 100px 0 0 100px ;
+    margin-left: 0.3%;
+    margin-right: 0.3%;
+    border-radius: 0px 0 0 0px ;
     background-color: #fff;
+
+  }
+
+  .carousel__slide2 {
+    position: relative;
+    flex: 0 0 100%;
+    width: 100%;
+    background-color: #0BF;
+
+  }
+
+  .carousel__slide3 {
+    
+    position: relative;
+    flex: 0 0 100%;
+    width: 100%;
+    margin-left: 0.3%;
+    background-color: #fff;
+    border-radius: 0 100px 100px 0 ;
 
   }
    
@@ -239,3 +249,5 @@ body{
     display: flex;
     justify-content: center;
   }
+
+    
