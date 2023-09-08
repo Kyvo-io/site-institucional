@@ -11,7 +11,7 @@
 
  
   #div_slide2{
-    height: 200px;
+    height: 100%;
     background-color: #0BF;
 
     font-size: 17px;
@@ -61,7 +61,7 @@
   }
 
   .terceiro-slide{
-    height: 501px;
+    height: 100%;
     background-color: #FFF;
     color: #101010;
 
@@ -87,7 +87,7 @@
   .bullet{
 
     width: 90%;
-    height: 60px;
+    height: 70px;
     background-color: #0BF;
     border-radius: 0 30px 30px 0;
     display: flex;
@@ -157,7 +157,7 @@
   
   .slide4_topicos {
 
-    font-size: 30px;
+    font-size: 22px;
     font-family: JetBrains Mono;
     font-style: normal;
     font-weight: 400;
@@ -174,11 +174,12 @@
     flex-direction: column;
     gap: 50px;
     padding-top: 10%;
+    padding-left: 30px;
     }
   
 
   .conteudo_slide4{
-    height: 523px;
+    height: 500px;
     display: flex;
     justify-content: space-around;
     flex-direction: row;
@@ -189,9 +190,9 @@
   }
 
   .slide4_imagem img{
-      height: 388px;
+      height: 357px;
       width: 800px;
-      margin-top: 16.7%;
+      margin-top: 18%;
   }
 
     /*Slide 5 */
@@ -199,7 +200,7 @@
 
     .fundo_branco{
       background-color: #FFF;
-      height: 470px;
+      height: 445px;
       width: 1100px;
 
       display: flex;
@@ -210,7 +211,7 @@
     .contedudo_esquerda_slide5{
 
       margin-top: 5%;
-      height: 400px;
+      height: 370px;
 
       display: flex;
       justify-content: space-evenly;
@@ -232,7 +233,7 @@
 
    .contedudo_direita_slide5{
 
-    height: 470px;
+    height: 445px;
     width: 550px;
     border-radius: 80px 0 0 0;
     background-color: #0BF;
@@ -255,7 +256,7 @@
  
  .fundo_branco2{
   background-color: #FFF;
-  height: 478px;
+  height: 445px;
   width: 1000px;
 
   display: flex;
@@ -282,7 +283,7 @@
   }
 
   .linha5{
-    height: 300px;
+    height: 305px;
     width: 25px;
     background-color: #FFF;
     margin-left: 3%;
@@ -291,7 +292,7 @@
 
   .fazer_parte{
     width: 350px;
-    height: 340px;
+    height: 305px;
 
     display: flex;
     align-items: center;
