@@ -6,29 +6,26 @@
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsividade/home-responsividade.css">
+    <link rel="stylesheet" href="assets/css/style-navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Kyvo.io | Login</title>
 </head>
 <body>
     <!-- Navbar -->
-    <div id="headerNavbar" class="header">
-        <div class="navbar">
-            <!-- BOTAO DE RESPONSIVIDADE DA NAVBAR -->
-            <div class="nav-itens">
-                <div class="nav-item"><span>Sobre nós</span></div>
-                <div class="nav-item"><span>Projeto</span></div>
-                <div class="nav-item"><span>Equipe</span></div>
-                <div class="nav-item"><span>Fale conosco</span></div>   
-                <div class="nav-item"><a href="./login.html" id="login-nav"><span>Login</span></a></div>   
-                          
-            </div>
-            <div class="logo-nav">
-                <div class="logo">
-                    <img src="assets/img/cubo-logo.svg" alt="">
-                </div>
-                <span class="titulo-logo">Kyvo.io</span>
-            </div>
-        </div>
-    </div> 
+    <div class="topnav" id="myTopnav">
+        
+        <a></a>
+        <a>Projeto</a>
+        <a>Equipe</a>
+        <a>Fale Conosco</a>
+        <a href="./login.html">Login</a>
+        <a class="active"><img src="assets/img/cubo-logo.svg" alt=""><span>Kyvo.io</span></a>
+        <img src="assets/img/cubo-logo.svg" alt="" class="img-logo-responsividade">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        
+      </div>
     <!-- Conteúdo -->
     <div class="linha1"></div>
 
@@ -53,4 +50,5 @@
 
     <div class="linha2"></div>
 </body>
+<script src="assets/js/navbar-responsividade.js"></script>
 </html>

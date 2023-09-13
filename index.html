@@ -6,30 +6,29 @@
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsividade/home-responsividade.css">
+    <link rel="stylesheet" href="assets/css/style-navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    
     <title>Kyvo.io</title>
     <link rel="shortcut icon" href="assets/img/cubo-logo.svg" type="image/x-icon">
 </head>
 <body>
     <!-- Navbar -->
-    <div id="headerNavbar" class="header">
-        <div class="navbar">
-            <!-- BOTAO DE RESPONSIVIDADE DA NAVBAR -->
-            <div class="nav-itens">
-                <div class="nav-item"><span>Sobre nós</span></div>
-                <div class="nav-item"><span>Projeto</span></div>
-                <div class="nav-item"><span>Equipe</span></div>
-                <div class="nav-item"><span>Fale conosco</span></div>   
-                <div class="nav-item"><a href="./login.html" id="login-nav"><span>Login</span></a></div>   
-                          
-            </div>
-            <div class="logo-nav">
-                <div class="logo">
-                    <img src="assets/img/cubo-logo.svg" alt="">
-                </div>
-                <span class="titulo-logo">Kyvo.io</span>
-            </div>
-        </div>
-    </div> 
+    <div class="topnav" id="myTopnav">
+        
+        <a></a>
+        <a>Projeto</a>
+        <a>Equipe</a>
+        <a>Fale Conosco</a>
+        <a href="./login.html">Login</a>
+        <a class="active"><img src="assets/img/cubo-logo.svg" alt=""><span>Kyvo.io</span></a>
+        <img src="assets/img/cubo-logo.svg" alt="" class="img-logo-responsividade">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        
+      </div>
 
     <!-- Conteúdo -->
     <div id="conteudo">
@@ -38,8 +37,7 @@
                 <div class="itens">
                     <span class="descubra-o-mundo">Descubra o mundo!</span>
                     <span class="bem-vindos">Bem-vindos a plataforma Kyvo.io</span>
-                    <span class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, perferendis corrupti, qui quod consectetur, eligendi culpa sequi molestiae porro adipisci voluptatibus! Eaque nemo modi accusantium similique magni! Modi, voluptatem sit.
-                        </span>
+                    <span class="descricao">O hardware não mente; é hora de escutá-lo!</span>
                 </div>
                 <div class="img-cubo"></div>
             </div>
@@ -52,7 +50,12 @@
         <div class="container-por-que-kyvo">
             <div class="conteudo-por-que">
                 <h1 class="titulo-por-que">Por quê <span>Kyvo</span>?</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum quo quaerat laborum nesciunt? Eaque possimus harum placeat officiis? Est, neque veritatis! Possimus eos sapiente totam expedita, quaerat perspiciatis porro nesciunt?</p>
+                <p>A palavra kyvo.io vem de origem grega, onde seu significado tem relação com a palavra Cubo.<br><br>
+                    As seis faces de um cubo podem ser associadas a diferentes aspectos do monitoramento, como a análise 
+                    de dados em tempo real, a avaliação do desempenho, a segurança, a eficiência, a disponibilidade e a 
+                    integridade dos sistemas. Assim como em um cubo, onde cada face é igualmente importante, em um sistema 
+                    de monitoramento eficaz, todos esses aspectos precisam ser abordados de maneira abrangente para garantir 
+                    um ambiente estável e seguro.</p>
             </div>
             <div class="conteudo-img-por-que"><img class="img-por-que" src="assets/img/cubo-porque.svg" alt=""></div>
         </div>
@@ -64,8 +67,10 @@
                 <div class="container-nossa-solucao">
                 <div class="lado-esquerdo">
                     <div class="titulo-monitro">
-                        <h1><img src="assets/img/Group 1.jpg" alt="" width="20%" height="20%">monitro</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quia consequatur commodi iure, ab aspernatur distinctio molestias ullam nisi modi beatae, sequi, fugit accusamus eius corrupti ad inventore nam quas?</p>
+                        <h1><img src="assets/img/Group 1 fundo azul.jpg" alt="" width="20%" height="20%">monitro</h1>
+                        <p>O monitoramento de hardware é uma prática fundamental para manter sistemas funcionando de forma eficiente e confiável. É uma ferramenta indispensável para administradores de sistemas, permitindo que eles mantenham a integridade dos sistemas e evitem interrupções indesejadas nos serviços e operações empresariais. 
+                            <br><br>Visando isso criamos o <span style="color: #00BBFF; font-family: 'Baloo 2';">monitro</span>!
+                          </p>
                     </div>
                 </div>
                 <div class="lado-direito">
@@ -203,18 +208,5 @@
 
 <script src="assets/js/navbar-fixa.js"></script>
 
-<script>
-    const nav = document.querySelector(".elementos");
-    const botao = document.querySelector(".linhas");
-    const linhas = document.querySelectorAll(".span");
-
-    function alternar() {
-    nav.classList.toggle("barra-lateral");
-    linhas[0].classList.toggle("linha-0");
-    linhas[1].classList.toggle("linha-1");
-    linhas[2].classList.toggle("linha-2");
-    }
-
-    botao.addEventListener("click", alternar);
-</script>
+<script src="assets/js/navbar-responsividade.js"></script>
 </html>
