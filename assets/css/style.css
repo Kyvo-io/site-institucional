@@ -16,28 +16,43 @@ body{
     background-color: var(--preto);
 }
 .header{
-    width: 100%;
+    
     display: flex;
     justify-content: center;
     height: 75px;
     border-width: 1px;
     border-bottom: 1px solid var(--verde);
     font-family: 'JetBrains Mono', monospace;
+    
 }
 .navbar{
     display: flex;
-    width: 85%;
+    width: 100%;
     justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
 }
+
+
+
+  
+
 .nav-itens{
     font-size: 18px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     gap: 100px;
     cursor: pointer;
     
+}
+.logo-nav{
+    font-size: 54px;
+    color: var(--verde);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .nav-itens :hover{
@@ -47,13 +62,7 @@ body{
 .nav-item{
     color: var(--verde);
 }
-.logo-nav{
-    font-size: 54px;
-    color: var(--verde);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 .grudado{
     position: fixed;
     top: 0;
@@ -71,12 +80,12 @@ body{
 }
 
 .container-descubra-o-mundo{
-    height: 60%;
+    height: 75%;
     width: 100%;
     background-image: url(../img/fundo-inicio.svg);
     background-size: cover;
-    display: flex;
-    
+    display: flex;   
+   
 }
 .itens > span{
     margin-left: 5%;
@@ -85,13 +94,13 @@ body{
 .itens {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    align-self: center;
     gap: 50px;
     width: 60%;
 }
 .descubra-o-mundo {
     margin-top: 5%;
-    font-size: 50px;
+    font-size: 40px;
     font-family: 'JetBrains Mono', monospace;
 }
 
@@ -108,11 +117,12 @@ body{
 }
 
 .img-cubo {
-    width: 40%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 300px;
+    align-self: center;
+    height: 300px;
+    background-image: url(../img/cubo-secundario.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 /* Por que kyvo */
@@ -128,7 +138,7 @@ body{
 .conteudo-por-que{
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 30%;
     justify-content: center;
     gap: 10px;
 }
@@ -139,8 +149,15 @@ body{
 .titulo-por-que > span{
     color: var(--verde);
 }
-.container-por-que-kyvo > img{
-    width: 50%;
+.conteudo-img-por-que{
+    width: 70%;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+}
+.img-por-que{
+    width: 80%;
+  
 }
 
 /* Nossa solução */
@@ -219,27 +236,31 @@ body{
 
 /* Conheça a equipe */
 
-.titulo-nossa-equipe{
+.titulo-e-nossa-equipe{
     display: flex;
     width: 100%;
     flex-direction: column;
     font-family: 'JetBrains Mono', monospace;
-    height: 500px;
+    margin-top: 20px;
 }
-.titulo-nossa-equipe > h1{
+.titulo-e-nossa-equipe > h1{
     font-size: 50px;
     justify-content: center;
     display: flex;
     width: 100%;
 }
+
+
 .fotos-integrantes {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     margin-top: 3%;
     justify-content: space-evenly;
 }
 .primeira-sequencia {
     padding-top: 2%;
+    width: 100%;
     flex-direction: row;
     display: flex;
     flex-wrap: wrap;
@@ -268,15 +289,56 @@ body{
 
 .container-contate-nos{
     display: flex;
-    height: 700px;
+    height: 800px;
     justify-content: center;
     align-items: center;
 }
 
-.formulario{
+
+.box-contate-nos{
+    display: flex;
+    height: 500px;
+    width: 100%;
+    align-items: center;
+}
+
+.linha-verde{
+    height: 60%;
+    width: 50%;
+    background-color: #4CC977;
+}
+
+.linha-verde.pequena{
+    width: 10%;
+   
+}
+
+.form-contate-nos{
+    display: flex;
+    width: 40%;
+    height: 500px; 
+    background-color: #ffffff;
+    color: #000000;
+    font-family: 'JetBrains Mono', monospace;   
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-contate-nos-titulo{
+    height: 90px;
+}
+
+.form-contate-nos-titulo h2{
+    font-size: 40px;
+    margin-top: 50px;
+}
+
+
+
+.mensagem-formulario-contate-nos{
     display: flex;
     height: 340px;
-    width: 100%;
+    width: 30%;
     background-color: #4CC977;
     gap: 40px;
 }
@@ -302,13 +364,13 @@ body{
 .formulario-contate-nos{
     display: flex;
     width: 44%;
-    height: 127%; 
-    margin-top: -50px;
+    height: 500px; 
     background-color: #ffffff;
     color: #000000;
     font-family: 'JetBrains Mono', monospace;   
     flex-direction: column;
     gap: 20px;
+
 }
 
 .formulario-contate-nos h2{
@@ -372,13 +434,15 @@ body{
 }
 
 .botao button{
-    width: 105px;
-    height: 38px;
+    width: 115px;
+    height: 45px;
     border-radius: 15px;
     cursor: pointer;
     background-color: #4CC977;
     border: none;
     font-family: 'JetBrains Mono', monospace;
+    margin-top: 20px;
+    font-size: 15px;
 }
 
 .inputs1 ::-webkit-input-placeholder {
@@ -403,6 +467,12 @@ body{
 
   input:focus{
     outline: none;
+}
+
+.linha-verde2{
+    height: 60%;
+    width: 17%;
+    background-color: #4CC977;
 }
 
 /* Login */

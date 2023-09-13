@@ -1,0 +1,357 @@
+/* Celular */
+@media only screen and (min-width: 300px){
+/* Nav */
+    .nav-itens{
+        display: none;
+    }
+    .titulo-logo{
+        display: none;
+    }
+/* Conteudo */
+    .container-descubra-o-mundo{
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .container-por-que-kyvo{ 
+        flex-direction: column;
+        gap: 10px;
+    }
+    .conteudo-por-que{
+        width: 100%;
+    }
+    .conteudo-img-por-que{
+        width: 100%;
+    }
+    .itens{
+        width: 100%;
+    }
+    .descubra-o-mundo{
+        text-align: center;
+    }
+    .img-cubo{
+        width: 150px;
+        height: 150px;
+    }
+    .fotos-integrantes{
+        flex-direction: column;
+        padding-top: 10%;
+         align-items: center;
+    }
+    .formulario{
+        flex-direction: column;
+    }
+    .mensagem{
+        width: 100%;
+    }
+    .titulo-monitro > p{
+        height: 20px;
+        font-size: 17px
+    }
+    
+    .integrante-kyvo{
+        display: flex;  
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 10%;
+        width: 100%;
+    }
+    .integrante-kyvo > h1 {
+        display: flex;
+        justify-content: center;
+        text-align: center; 
+    }
+    .titulo-e-nossa-equipe{
+        margin-top: 450%;
+    }
+    .titulo-e-nossa-equipe > h1{
+        font-size: 130%;
+    }
+
+    .container-contate-nos{
+        margin-top: 350%;
+        display: flex;
+    }
+    .box-contate-nos{
+        margin-top: 60px;
+        flex-direction: column;
+        width: 100%;
+    }
+    .linha-verde{
+        width: 100%;   
+    }
+    .mensagem{
+        height: 200px;
+    }
+    .mensagem p{
+        width: 80%;
+        font-size: 16px;
+        text-align: center;
+    }
+    .form-contate-nos{
+        width: 100%;
+        
+    }
+    .form-contate-nos h2{
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    #botao-contate-nos{
+        width: 100px;
+        margin-bottom: 20px;
+    }
+
+    /* Login */
+
+    .formulario-login{
+        width: 100%;
+    }
+
+    .botao-login button{
+        width: 25%;
+    }
+    
+    .formulario-login span{
+        font-size: 22px;
+    }
+   
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px){
+
+    .fotos-integrantes{
+        flex-direction: row;
+    }
+    .titulo-e-nossa-equipe{
+        height: auto;
+        margin-top: 80%;
+    }
+    .integrante-kyvo{
+        width: 50%;
+    }
+    .titulo-e-nossa-equipe > h1{
+        font-size: 200%;
+        display: flex;
+        justify-content: left;
+        margin-left: 10%;
+    }
+    .container-contate-nos{
+        margin-top:50%;
+        display: flex;
+    }
+    .container-contate-nos{
+        display: flex;
+    }
+    .box-contate-nos{
+        margin-top: 60px;
+        flex-direction: column;
+        width: 100%;
+    }
+    .linha-verde{
+        width: 100%;   
+    }
+    .mensagem{
+        height: 200px;
+    }
+    .mensagem p{
+        width: 85%;
+        font-size: 20px;
+        text-align: center;
+    }
+    .form-contate-nos{
+        width: 100%;
+        
+    }
+    .form-contate-nos h2{
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    #botao-contate-nos{
+        width: 100px;
+        margin-bottom: 20px;
+    }
+
+    /* Login */
+
+    
+    .formulario-login{
+        width: 50%;
+        height: 400px ;
+    }
+
+    .botao-login button{
+        width: 25%;
+    }
+    
+    .formulario-login span{
+        font-size: 25px;
+    }
+
+    .linha2{
+        margin-top: -10px;
+    }
+
+    .container-descubra-o-mundo2{
+        height: 300px;
+        margin-top: 5px;
+    }
+}
+/* Desktop pequeno */
+@media only screen and (min-width: 992px){
+
+    .integrante-kyvo{
+        width: 33%;
+    }
+    .titulo-e-nossa-equipe{
+        height: auto;
+        margin-top: 50%;
+    }
+    .titulo-e-nossa-equipe > h1{
+        font-size: 220%;
+        display: flex;
+        justify-content: left;
+        margin-left: 10%;
+    }
+    .titulo-logo{
+        display: none;
+    }
+    .formulario{
+        flex-direction: row;
+    }
+    .nav-itens{
+        display: flex;
+        width: 75%;
+        justify-content: flex-start;
+        gap: 50px;
+    }
+    .container-descubra-o-mundo{
+        flex-direction: row;
+        
+    }
+    .conteudo-img-por-que{
+        width: 70%;
+    }
+    .container-por-que-kyvo{ 
+        flex-direction: row;
+    }
+    .conteudo-por-que{
+        width: 50%;
+    }
+    .descubra-o-mundo{
+        text-align: left;
+    }
+    .img-cubo{
+        width: 300px;
+        height: 300px;
+    }
+    .itens{
+        width: 60%;
+    }
+
+    .container-contate-nos{
+        flex-direction: row;
+    }
+    
+    
+    .box-contate-nos{
+        height: 500px;
+        width: 100%;
+        align-items: center;
+        flex-direction: row;
+    }
+    
+    .linha-verde{
+        height: 60%;
+        width: 50%;
+    }
+    
+    .form-contate-nos{
+        width: 40%;
+        height: 450px;  
+    }
+    
+    .form-contate-nos-titulo{
+        height: 90px;
+    }
+    
+    .form-contate-nos-titulo h2{
+        font-size: 40px;
+        margin-top: 50px;
+    }
+
+
+    /* Login */
+
+
+     .formulario-login{
+        width: 40%;
+        height: 390px ;
+    }
+
+    .botao-login button{
+        width: 25%;
+    }
+    
+    .formulario-login span{
+        font-size: 25px;
+    }
+
+    .linha2{
+    }
+
+    .container-descubra-o-mundo2{
+        height: 50%;
+        margin-bottom: 60px;
+    } 
+    
+    
+    
+    .mensagem-formulario-contate-nos{
+        display: flex;
+        height: 340px;
+        width: 80%;
+        background-color: #4CC977;
+        gap: 40px;
+    }
+    
+    .mensagem{
+        width: 90%;
+        height: 100%;
+    }
+    
+    .mensagem p{
+        width: 75%;
+        font-size: 28px;
+    
+    }
+
+
+    .container-contate-nos{
+        margin-top: 30%;
+        display: flex;
+    }
+}
+/* Desktop médio */
+@media only screen and (min-width: 1200px){
+    .nav-itens{
+        display:flex;
+    }
+    .formulario-login{
+        width: 35%;
+        height: 390px ;
+    }
+}
+/* Desktop grande */
+@media only screen and (min-width: 1351px){
+    .titulo-logo{
+        display: flex;
+    }
+    .formulario-login{
+        width: 35%;
+        height: 410px ;
+    }
+    .linha2{
+        margin-top: -50px;
+    }
+}
+
