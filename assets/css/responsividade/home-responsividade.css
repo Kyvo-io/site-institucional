@@ -1,6 +1,7 @@
 /* Celular */
 @media only screen and (min-width: 300px){
 /* Nav */
+
     .nav-itens{
         display: none;
     }
@@ -14,6 +15,7 @@
     }
     .container-por-que-kyvo{ 
         flex-direction: column;
+        margin-bottom: 500px;
         gap: 10px;
     }
     .conteudo-por-que{
@@ -47,7 +49,17 @@
         height: 20px;
         font-size: 17px
     }
-    
+    .container-nossa-solucao{
+        gap: 400px;
+        flex-direction: column;
+    }
+    .lado-esquerdo{      
+        width: 100%;
+    }
+    .lado-direito{
+        width: 100%;
+        
+    }
     .integrante-kyvo{
         display: flex;  
         align-items: center;
@@ -132,6 +144,7 @@
     .titulo-e-nossa-equipe > h1{
         font-size: 200%;
         display: flex;
+        margin-top: 200px;
         justify-content: left;
         margin-left: 10%;
     }
@@ -146,6 +159,9 @@
         margin-top: 60px;
         flex-direction: column;
         width: 100%;
+    }
+    .container-nossa-solucao{
+       gap: 150px;
     }
     .linha-verde{
         width: 100%;   
@@ -171,6 +187,7 @@
         margin-bottom: 20px;
     }
 
+
     /* Login */
 
     
@@ -194,6 +211,10 @@
     .container-descubra-o-mundo2{
         height: 300px;
         margin-top: 5px;
+    }
+    .container-por-que-kyvo{ 
+        
+        margin-bottom: 300px;
     }
 }
 /* Desktop pequeno */
@@ -228,6 +249,9 @@
         flex-direction: row;
         
     }
+    .container-nossa-solucao{
+        gap: 0px;
+     }
     .conteudo-img-por-que{
         width: 70%;
     }
@@ -279,7 +303,15 @@
         margin-top: 50px;
     }
 
-
+    .container-nossa-solucao{
+        flex-direction: row;
+    }
+    .lado-esquerdo{
+        width: 50%;
+    }
+    .lado-direito{
+        width: 50%;
+    }
     /* Login */
 
 
