@@ -125,6 +125,20 @@
     .formulario-login span{
         font-size: 22px;
     }
+
+    /* Cadastro */
+
+    .imagem-cadastro img{
+        display: none;
+    }
+
+    .formulario-cadastro{
+        width: 100%;
+    }
+
+    .linha-baixo-verde-cadastro{
+        display: none;
+    }
    
 }
 
@@ -215,6 +229,17 @@
     .container-por-que-kyvo{ 
         
         margin-bottom: 300px;
+    }
+
+    /* Cadastro */
+
+    .formulario-cadastro{
+        width: 70%;
+        align-self: center;
+    }
+
+    .linha-baixo-verde-cadastro{
+        display: none;
     }
 }
 /* Desktop pequeno */
@@ -361,6 +386,23 @@
     .container-contate-nos{
         margin-top: 30%;
         display: flex;
+    }
+
+    /* Cadastro */
+    
+
+    .formulario-cadastro{
+        width: 500px;
+    }
+
+    .linha-baixo-verde-cadastro{
+        display: flex;
+    }
+
+    .imagem-cadastro img{
+        display: flex;
+        height: 300px;
+        width: 300px;
     }
 }
 /* Desktop médio */
