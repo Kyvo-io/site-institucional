@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Pathway+Extreme:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:wght@600&family=Roboto+Mono:wght@600&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+ :root {
+    --azul: #28c8ef;
+    --azul-dark-mode: #0E1826;
+    --branco-light-mode: #F2F2F2; 
+ } 
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background-color: #0E1826;
+  }
+
+  .navbar {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-logo {
+    width: 80%;
+    color: var(--azul);
+    display: flex;
+    align-items: center;
+    font-size: 45px;
+    font-family: 'Poppins';
+
+  }
+
+
+
+
+  .elementos {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: whitesmoke;
+    font-weight: 500;
+    font-size: 20px;
+    font-family: 'Poppins';
+    transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    height: 75px;
+    width: 100%;
+  }
+
+  ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  li {
+    display: flex;
+    align-items: center;
+  }
+
+  li a {
+    color: white;
+    text-decoration: none;
+
+}
+
+.engrenagem img{
+    width: 30px;
+}
+  
+  .span {
+    width: 30px;
+    height: 4px;
+    background-color: black;
+    margin-bottom: 5px;
+    border-radius: 2px;
+    transition: 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+
+  .botao {
+    display: none;
+  }
+
+
+  @media (max-width: 900px) {
+    .elementos {
+      
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      margin: 0;
+      padding: 20px;
+      width: 35%;
+      height: 80.3%;
+      transform: translateX(-200%);
+    }
+
+    
+
+    .img-logo {
+        display: none;
+    }
+  }
+
+
+  @media (max-width: 900px) {
+
+  
+    .botao {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-left: 20px;
+      padding-top: 20px;
+    }
+  }
+
+  @media (max-width: 900px) {
+  .barra-lateral {
+    transform: translateX(0px);
+    transform: translateY(55%);
+
+  }
+
+  .elementos li{
+    border-right: var(--azul) 2px solid;
+  }
+  }
