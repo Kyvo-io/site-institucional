@@ -1,0 +1,138 @@
+@import url(global.css);
+
+.containerContato {
+    display: none;
+}
+
+.containerContatoLeft {
+    display: flex;
+    width: 40%;
+    padding-left: 5%;   
+    flex-direction: column;
+}
+.containerContatoLeftTitulo {
+    display: flex;
+    width: 100%;
+    justify-content: left;
+}
+.containerContatoLeftTitulo > span{
+    color: var(--branco-light-mode);
+    font-size: 250%;
+    font-family: "poppins"; 
+    margin-bottom: 2%;
+}
+.redesSociais{
+    display: flex;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    font-family: "poppins";
+    margin-top: 10%;
+}
+.linhaRede {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 25%;
+    color: var(--azul);
+    font-size: 250%;
+    margin-bottom: 10%;
+    justify-content: left;
+}
+
+.linhaRede > svg {
+    width: 11%;
+    padding-right: 5%;
+}
+.linhaRede > p {
+    color: var(--branco-light-mode);
+    font-size: 80%;
+    text-align: left;
+}
+
+
+
+
+.linhaVerticalContato {
+    width: 0.2%;
+    height: 70vh;
+    background-color: var(--branco-light-mode);
+    border-radius: 15px;
+    margin-top: 3%;
+    margin-left: 5%;
+}
+
+.containerContatoRight {
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    align-items: center;
+}
+.cardContato{
+    display: flex;
+    background-color: var(--azul);
+    width: 50%;
+    height: 50%;
+    justify-content: center;
+    font-family: "poppins";
+    margin-top: 5%;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+    z-index: 0;
+
+
+}
+
+.cardContato > span {
+    font-size: 180%;
+    margin-bottom: 35%;
+}
+
+.cardEmail{
+    position: absolute;
+    z-index: 100;
+    display: flex;
+    z-index: 100;
+    width: 45%;
+    height: 55%;
+    margin-top: 10%;
+    background-color: var(--branco-light-mode);
+}
+
+.cardEmail {
+    flex-direction: column;
+    align-items: center;
+    font-family: "poppins";
+}
+.cardEmail > span {
+    font-size: 200%;
+    margin-top: 5%;
+}
+.inputContato {
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid ;
+    font-family: "poppins";
+    font-size: 110%;
+    margin-top: 7%;
+    width: 70%;
+    outline: none;
+}
+.inputContato:hover{
+    cursor: text;
+}
+
+.botaoEnviarContato {
+    width: 20%;
+    height: 12%;
+    background-color: var(--azul);
+    border-radius: 15px;
+    font-family: "poppins";
+    color: var(--branco-light-mode);
+    font-size: 120%;
+    margin-top: 5%;
+}

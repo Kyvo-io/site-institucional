@@ -1,0 +1,44 @@
+@import url(global.css);
+
+
+.containerIntegrantes {
+    display: none;
+    flex-direction: column;
+}
+
+.containerIntegrantesTitulo{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-family: "poppins";
+}
+.containerIntegrantesTitulo  > span{
+    font-size: 300%;
+    color: var(--branco-light-mode);
+    margin-bottom: 1%;
+}
+
+.containerIntegrantesFotos{
+    display: flex;
+    flex-direction: column;
+}
+.containerIntegrantesFotosLinha{
+    justify-content: space-around;
+    display: flex;
+    margin-top: 1%;
+}
+.containerIntegrantesIntegrante {
+    display: flex;
+    flex-direction: column;
+    width: 12%;
+    height: 15%;
+    color: var(--branco-light-mode);
+    font-family: "poppins";
+    font-size: 120%;
+    justify-content: center;
+    text-align: center;
+}
+.containerIntegrantesIntegrante > img {
+    border-radius: 15px;
+    margin-bottom: 5%;
+}

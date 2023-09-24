@@ -1,0 +1,50 @@
+@import url(global.css);
+
+
+.containerSobreNos{
+display: none;
+}
+.containerSobreNosLeft{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.containerSobreNosLeft > span {
+    color: var(--branco-light-mode);
+    font-size: 370%;
+    margin-left: 10%;
+    margin-top: 6%;
+    font-family: "Poppins";
+    line-height: 1; 
+}
+.containerSobreNosLeft > p{
+    color: var(--branco-light-mode);
+    font-size: 170%;
+    margin-left: 10%;
+    margin-top: 5%;
+    font-family: "Poppins";
+    font-weight: 500;
+}
+.textosSobreNos{
+    color: var(--branco-light-mode);
+    font-size: 130%;
+    width: 90%;
+    font-family: "Poppins";
+    margin-left: 10%;
+    margin-top: 5%;
+    line-height: 1.2;  
+    text-align: left;
+}
+.containerSobreNosRight{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.containerSobreNosRight > img{
+    width: 70%;
+    height: 100%;
+}
+
+

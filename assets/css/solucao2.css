@@ -1,0 +1,103 @@
+@import url(global.css);
+
+.containercardSolucao2 {
+    display: none;
+}
+
+.cardSolucao2{
+   position: absolute;
+   margin-left: 10%;
+   display: flex;
+   width: 80%;
+   height: 80%;
+   background-color: var(--azul);
+   border-radius: 10px;
+   flex-direction: column;
+}
+
+.botaoFecharSolucao2{
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    color: var(--azul-dark-mode);
+}
+.botaoFecharSolucao2 > svg {
+    display: flex;
+    width: 2%;
+    margin-right: 2%;
+    margin-top: 2%;
+}
+.nomeMonitroSolucao2 {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    font-size: 150%;
+    font-family: "baloo 2";
+    color: var(--azul);
+    font-size: 500%;
+}
+.nomeMonitroSolucao2 > img {
+    width: 8%;
+    margin-right: 3%;
+    margin-left: 5%;
+}
+.detalhesMonitro {
+    display: flex;
+    flex-direction: row;
+}
+.nomeMonitroSolucao2Left {
+    display: flex;
+    width: 50%;
+    margin-left: 5%;
+    flex-direction: column;
+}
+
+.nomeMonitroSolucao2Left > span {
+    display: flex;
+    font-family: "poppins";
+    font-size: 250%;
+    color: var(--branco-light-mode);
+    margin-top: 5%;
+}
+
+.nomeMonitroSolucao2Left > p {
+
+    margin-top: 5%;
+    font-family: "poppins";
+    font-size: 140%;
+    line-height: 1.5;
+    color: var(--branco-light-mode);
+}
+
+
+.nomeMonitroSolucao2Right {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10%;
+}
+.nomeMonitroSolucao2Right > img {
+    width: 60%;
+}
+.imgMapa {
+    position: absolute;
+    width: 25%;
+    height: 40vh;
+    background-color: black;
+    border-radius: 15%;
+    margin-bottom: 10%;
+    margin-left: 20%;
+}
+.imgDashboard {
+    position: absolute;
+    width: 25%;
+    height: 40vh;
+    background-color: blue;
+    border-radius: 15%;
+    margin-top: 20%;
+    margin-right: 20%;
+
+}

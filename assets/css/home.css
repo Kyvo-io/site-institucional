@@ -1,0 +1,50 @@
+@import url(global.css);
+
+
+.containerHome{
+display: flex;
+}
+.containerHomeLeft{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.containerHomeLeft > span {
+    color: var(--branco-light-mode);
+    font-size: 370%;
+    margin-left: 10%;
+    margin-top: 6%;
+    font-family: "Poppins";
+    line-height: 1; 
+}
+.containerHomeLeft > p{
+    color: var(--azul);
+    font-size: 200%;
+    margin-left: 10%;
+    margin-top: 6%;
+    font-family: "Poppins";
+    font-weight: 500;
+}
+.textosHome{
+    color: var(--branco-light-mode);
+    font-size: 150%;
+    width: 75%;
+    font-family: "Poppins";
+    margin-left: 10%;
+    margin-top: 6%;
+    line-height: 1.2;  
+    text-align: left;
+}
+.containerHomeRight{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.containerHomeRight > img{
+    width: 70%;
+    height: 100%;
+}
+
+

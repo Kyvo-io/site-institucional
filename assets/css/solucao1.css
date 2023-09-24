@@ -1,0 +1,92 @@
+@import url(global.css);
+
+.containercardSolucao1 {
+    display: none;
+}
+
+.cardSolucao1{
+   position: absolute;
+   margin-left: 10%;
+   display: flex;
+   width: 80%;
+   height: 80%;
+   background-color: var(--azul);
+   border-radius: 10px;
+   flex-direction: column;
+}
+
+.botaoFecharSolucao1{
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    color: var(--azul-dark-mode);
+}
+.botaoFecharSolucao1 > svg {
+    display: flex;
+    width: 2%;
+    margin-right: 2%;
+    margin-top: 2%;
+}
+.nomeMonitroSolucao1 {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    font-size: 150%;
+    font-family: "baloo 2";
+    color: var(--azul);
+    font-size: 500%;
+}
+.nomeMonitroSolucao1 > img {
+    width: 8%;
+    margin-right: 3%;
+    margin-left: 5%;
+}
+.detalhesMonitro {
+    display: flex;
+    flex-direction: row;
+}
+.nomeMonitroSolucao1Left {
+    display: flex;
+    width: 50%;
+    margin-left: 5%;
+    flex-direction: column;
+}
+
+.nomeMonitroSolucao1Left > span {
+    display: flex;
+    font-family: "poppins";
+    font-size: 250%;
+    color: var(--branco-light-mode);
+    margin-top: 5%;
+}
+
+.nomeMonitroSolucao1Left > p {
+    margin-top: 5%;
+    font-family: "poppins";
+    font-size: 140%;
+    line-height: 1;
+    color: var(--branco-light-mode);
+}
+
+.botaoSolucao1 {
+    width:35%;
+    height: 10%;
+    background-color: var(--azul);
+    border-radius: 15px;
+    font-family: "poppins";
+    color: var(--branco-light-mode);
+    font-size: 110%;
+    margin-top: 10%;
+}
+
+.nomeMonitroSolucao1Right {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nomeMonitroSolucao1Right > img {
+    width: 60%;
+}

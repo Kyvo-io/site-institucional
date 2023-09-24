@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&family=Poppins:wght@300&display=swap');
+
+
+:root {
+    --azul: #28c8ef;
+    --azul-dark-mode: #0E1826;
+    --branco-light-mode: #F2F2F2; 
+ } 
+
+ button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+ }
+
