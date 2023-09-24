@@ -1,6 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&family=Poppins:wght@300&display=swap');
 
+@keyframes animacaoCubo{
+   0% {
+      transform: translateY(-30px);
+   }
+   50% {
+      transform: translateY(0px);
+   }
+   100% {
+      transform: translateY(-30px);
+   }
+}
 
 :root {
     --azul: #28c8ef;

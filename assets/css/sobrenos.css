@@ -45,6 +45,8 @@ display: none;
 .containerSobreNosRight > img{
     width: 70%;
     height: 100%;
+    animation: animacaoCubo 5s ease-in-out infinite;
+
 }
 
 
