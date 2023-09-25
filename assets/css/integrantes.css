@@ -9,6 +9,7 @@
 .containerIntegrantesTitulo{
     display: flex;
     width: 100%;
+    font-weight: 600 ;
     justify-content: center;
     font-family: "poppins";
 }
@@ -31,6 +32,8 @@
     display: flex;
     flex-direction: column;
     width: 12%;
+    align-items: center;
+    gap: 10px;
     height: 15%;
     color: var(--branco-light-mode);
     font-family: "poppins";
@@ -38,7 +41,64 @@
     justify-content: center;
     text-align: center;
 }
-.containerIntegrantesIntegrante > img {
+
+
+
+.fotoIntegrante{
     border-radius: 15px;
-    margin-bottom: 5%;
+    width: 165px;
+    background-repeat: no-repeat;
+    height: 165px;   
+    background-size: contain;
 }
+.contatos{
+    border-radius: 15px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    font-size: 16px;
+    align-items: center;
+    width: 165px;
+    height: 165px;   
+    background-color: rgba(0, 0, 0, 0.793);
+}
+.contato-item{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.contato-item > a{
+    color: white;
+}
+.containerIntegrantesIntegrante:hover>.fotoIntegrante{
+    display: none;
+}
+.containerIntegrantesIntegrante:hover>.contatos{
+    display: flex;
+    
+}
+.carlos{
+    background-image: url(../img/img-carlos.jpg);
+}
+
+.breno{
+    background-image: url(../img/img-breno.jpg);
+}
+
+.leandro{
+    background-image: url(../img/foto-leandro.jpg);
+}
+
+.lucio{
+    background-image: url(../img/img-lucio.jpg);
+}
+
+.mirella{
+    background-image: url(../img/img-Mirella.jpg);
+}
+
+.roberto{
+    background-image: url(../img/img-roberto.jpg);
+}
+
