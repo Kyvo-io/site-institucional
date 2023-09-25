@@ -18,10 +18,149 @@
     <link rel="stylesheet" href="assets/css/login.css" />
     <link rel="stylesheet" href="assets/css/solucao1.css" />
     <link rel="stylesheet" href="assets/css/solucao2.css" />
-
+ 
     <style type="text/css" id="operaUserStyle"></style>
   </head>
   <body>
+      <!-- Fundo - Modal -->
+  <div id="fundo_modal" class="fundo-modal">
+    <!-- Modal cadastro -->
+    <div class="containerCadastro" id="cadastro">
+      <div class="cardCadastro">
+        <div class="botaoFechar" onclick="trocarExibicaoModalCadastro()">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            class="bi bi-x-lg"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"
+            />
+          </svg>
+        </div>
+        <div class="nomeMonitro">
+          <img src="assets/img/Group 1 fundo azul.png" alt="" />
+          <span>monitro</span>
+        </div>
+        <div class="cardAzul"></div>
+        <div class="cardBranco">
+          <span>Cadastro</span>
+          <input class="inputCadastro" placeholder="Nome do Responsável" />
+          <input class="inputCadastro" placeholder="Nome da Empresa" />
+          <input class="inputCadastro" placeholder="Email" />
+          <input class="inputCadastro" placeholder="CNPJ" />
+          <button class="botaoEnviarCadastro">Enviar</button>
+        </div>
+      </div>
+    </div>
+    <!-- Modal login -->
+    <div class="containerLogin" id="login">
+      <div class="cardLogin">
+        <div class="botaoFechar" onclick="trocarExibicaoModalLogin()">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            class="bi bi-x-lg"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"
+            />
+          </svg>
+        </div>
+        <div class="nomeMonitro">
+          <img src="assets/img/Group 1 fundo azul.png" alt="" />
+          <span>monitro</span>
+        </div>
+        <div class="cardAzul"></div>
+        <div class="cardBranco">
+          <span>Login</span>
+          <input class="inputLogin" placeholder="Seu Email" />
+          <input class="inputLogin" placeholder="Senha" type="password" />
+          <button class="botaoEnviarLogin">Entrar</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="containercardSolucao1" id="solucao1">
+      <div class="cardSolucao1">
+        <div class="botaoFecharSolucao1">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            class="bi bi-x-lg"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"
+            />
+          </svg>
+        </div>
+        <div class="nomeMonitroSolucao1">
+          <img src="assets/img/Group 1 fundo azul.png" alt="" />
+          <span>monitro</span>
+        </div>
+        <div class="detalhesMonitro">
+          <div class="nomeMonitroSolucao1Left">
+            <span>Nossa Solução</span>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet eius
+              dolorem optio, provident maxime culpa. Aliquid excepturi, ad
+              nesciunt harum cum fuga quasi officiis dolor non, fugiat assumenda
+              blanditiis voluptates.
+            </p>
+            <button class="botaoSolucao1" >Quero fazer parte !</button>
+          </div>
+
+          <div class="nomeMonitroSolucao1Right">
+            <img src="assets/img/imgSolucao1.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="containercardSolucao2" id="solucao2">
+      <div class="cardSolucao2">
+        <div class="botaoFecharSolucao2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            class="bi bi-x-lg"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"
+            />
+          </svg>
+        </div>
+        <div class="nomeMonitroSolucao2">
+          <img src="assets/img/Group 1 fundo azul.png" alt="" />
+          <span>monitro</span>
+        </div>
+        <div class="detalhesMonitro">
+          <div class="nomeMonitroSolucao2Left">
+            <span>Captura de Dados e Geolocalização </span>
+            <p>
+              Monitoramos componentes de hardware para garantir desempenho e
+              estabilidade do sistema.
+              <br /><br />
+              - CPU<br />
+              - DISCO<br />
+              - RAM<br />
+              - Janelas do Sistema<br />
+            </p>
+          </div>
+
+          <div class="nomeMonitroSolucao2Right">
+            <div class="imgMapa"></div>
+            <div class="imgDashboard"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
     <nav class="navbar">
       <div class="botao">
         <div class="logo-botao">
@@ -60,7 +199,7 @@
         </div>
       </div>
       <div class="containerHomeRight">
-        <img src="assets/img/cuboHome.png" alt="">
+        <img src="assets/img/cuboHome.png" alt="" />
       </div>
     </div>
 
@@ -89,7 +228,6 @@
       </div>
     </div>
 
-
     <div class="containerIntegrantes" id="integrantes">
       <div class="containerIntegrantesTitulo">
         <span>Conheça nossa equipe</span>
@@ -98,11 +236,12 @@
       <div class="containerIntegrantesFotos">
         <div class="containerIntegrantesFotosLinha">
           <div class="containerIntegrantesIntegrante">
-            <div class="fotoIntegrante breno">
-            </div>
+            <div class="fotoIntegrante breno"></div>
             <div class="contatos">
               <div class="contato-item">
-                <a href="https://github.com/brenosouzza"><i class="fa-brands fa-github"></i></a>
+                <a href="https://github.com/brenosouzza"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
                 <span>Github</span>
               </div>
               <div class="contato-item">
@@ -116,11 +255,15 @@
             <div class="fotoIntegrante carlos"></div>
             <div class="contatos">
               <div class="contato-item">
-                <a href="https://github.com/carlosgoes0"><i class="fa-brands fa-github"></i></a>
+                <a href="https://github.com/carlosgoes0"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
                 <span>Github</span>
               </div>
               <div class="contato-item">
-                <a href="https://www.linkedin.com/in/carlos-goes-a51a6a264"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.linkedin.com/in/carlos-goes-a51a6a264"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
                 <span>Linkedin</span>
               </div>
             </div>
@@ -130,11 +273,15 @@
             <div class="fotoIntegrante leandro"></div>
             <div class="contatos">
               <div class="contato-item">
-                <a href="https://github.com/lean-dro"><i class="fa-brands fa-github"></i></a>
+                <a href="https://github.com/lean-dro"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
                 <span>Github</span>
               </div>
               <div class="contato-item">
-                <a href="https://www.linkedin.com/in/leandro-coelho-2942a9220/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.linkedin.com/in/leandro-coelho-2942a9220/"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
                 <span>Linkedin</span>
               </div>
             </div>
@@ -146,11 +293,16 @@
             <div class="fotoIntegrante lucio"></div>
             <div class="contatos">
               <div class="contato-item">
-                <a href="https://github.com/LucioGarciaRios"><i class="fa-brands fa-github"></i></a>
+                <a href="https://github.com/LucioGarciaRios"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
                 <span>Github</span>
               </div>
               <div class="contato-item">
-                <a href="https://www.linkedin.com/in/l%C3%BAcio-garcia-rios-98488a144"><i class="fa-brands fa-linkedin"></i></a>
+                <a
+                  href="https://www.linkedin.com/in/l%C3%BAcio-garcia-rios-98488a144"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
                 <span>Linkedin</span>
               </div>
             </div>
@@ -160,11 +312,15 @@
             <div class="fotoIntegrante mirella"></div>
             <div class="contatos">
               <div class="contato-item">
-                <a href="https://github.com/Mirella-Ot"><i class="fa-brands fa-github"></i></a>
+                <a href="https://github.com/Mirella-Ot"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
                 <span>Github</span>
               </div>
               <div class="contato-item">
-                <a href="https://www.linkedin.com/in/mirella-ot-7957a2285/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.linkedin.com/in/mirella-ot-7957a2285/"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
                 <span>Linkedin</span>
               </div>
             </div>
@@ -174,7 +330,9 @@
             <div class="fotoIntegrante roberto"></div>
             <div class="contatos">
               <div class="contato-item">
-                <a href="https://github.com/RobertoTurbiani"><i class="fa-brands fa-github"></i></a>
+                <a href="https://github.com/RobertoTurbiani"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
                 <span>Github</span>
               </div>
               <div class="contato-item">
@@ -213,8 +371,8 @@
             <p>Acesse aqui sua aplicação</p>
           </div>
           <div class="botoesCardMonitro">
-            <button class="botaoCadastrar">Cadastrar</button>
-            <button class="botaoSLogin">Entrar</button>
+            <button class="botaoCadastrar" onclick="trocarExibicaoModalCadastro()">Cadastrar</button>
+            <button class="botaoSLogin" onclick="trocarExibicaoModalLogin()">Entrar</button>
           </div>
         </div>
       </div>
@@ -293,142 +451,6 @@
         </div>
       </div>
     </div>
-
-<!-- Modal cadastro -->
-    <div class="containerCadastro" id="cadastro">
-      <div class="cardCadastro">
-        <div class="botaoFechar">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="currentColor"
-            class="bi bi-x-lg"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"
-            />
-          </svg>
-        </div>
-        <div class="nomeMonitro">
-          <img src="assets/img/Group 1 fundo azul.png" alt="" />
-          <span>monitro</span>
-        </div>
-        <div class="cardAzul"></div>
-        <div class="cardBranco">
-          <span>Cadastro</span>
-          <input class="inputCadastro" placeholder="Nome do Responsável" />
-          <input class="inputCadastro" placeholder="Nome da Empresa" />
-          <input class="inputCadastro" placeholder="Email" />
-          <input class="inputCadastro" placeholder="CNPJ" />
-          <button class="botaoEnviarCadastro">Enviar</button>
-        </div>
-      </div>
-    </div>
-<!-- Modal login -->
-    <div class="containerLogin" id="login">
-      <div class="cardLogin">
-        <div class="botaoFechar">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="currentColor"
-            class="bi bi-x-lg"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"
-            />
-          </svg>
-        </div>
-        <div class="nomeMonitro">
-          <img src="assets/img/Group 1 fundo azul.png" alt="" />
-          <span>monitro</span>
-        </div>
-        <div class="cardAzul"></div>
-        <div class="cardBranco">
-          <span>Login</span>
-          <input class="inputLogin" placeholder="Seu Email" />
-          <input class="inputLogin" placeholder="Senha" type="password" />
-          <button class="botaoEnviarLogin">Entrar</button>
-        </div>
-      </div>
-    </div>
-
-    <div class="containercardSolucao1" id="solucao1">
-      <div class="cardSolucao1">
-        <div class="botaoFecharSolucao1">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="currentColor"
-            class="bi bi-x-lg"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"
-            />
-          </svg>
-        </div>
-        <div class="nomeMonitroSolucao1">
-          <img src="assets/img/Group 1 fundo azul.png" alt="" />
-          <span>monitro</span>
-        </div>
-        <div class="detalhesMonitro">
-          <div class="nomeMonitroSolucao1Left">
-            <span>Nossa Solução</span>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet eius
-              dolorem optio, provident maxime culpa. Aliquid excepturi, ad
-              nesciunt harum cum fuga quasi officiis dolor non, fugiat assumenda
-              blanditiis voluptates.
-            </p>
-            <button class="botaoSolucao1">Quero fazer parte !</button>
-          </div>
-
-          <div class="nomeMonitroSolucao1Right">
-            <img src="assets/img/imgSolucao1.png" alt="" />
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="containercardSolucao2" id="solucao2">
-      <div class="cardSolucao2">
-        <div class="botaoFecharSolucao2">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="currentColor"
-            class="bi bi-x-lg"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"
-            />
-          </svg>
-        </div>
-        <div class="nomeMonitroSolucao2">
-          <img src="assets/img/Group 1 fundo azul.png" alt="" />
-          <span>monitro</span>
-        </div>
-        <div class="detalhesMonitro">
-          <div class="nomeMonitroSolucao2Left">
-            <span>Captura de Dados e Geolocalização </span>
-            <p>
-              Monitoramos componentes de hardware para garantir desempenho e
-              estabilidade do sistema.
-              <br /><br />
-              - CPU<br />
-              - DISCO<br />
-              - RAM<br />
-              - Janelas do Sistema<br />
-            </p>
-          </div>
-
-          <div class="nomeMonitroSolucao2Right">
-            <div class="imgMapa"></div>
-            <div class="imgDashboard"></div>
-          </div>
-        </div>
-      </div>
-    </div>
   </body>
 </html>
 
@@ -446,3 +468,4 @@
   }
   botao.addEventListener("click", alternar);
 </script>
+<script src="assets/js/modais.js"></script>

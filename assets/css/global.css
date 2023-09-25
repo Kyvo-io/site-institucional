@@ -24,4 +24,16 @@
     border: none;
     outline: none;
  }
-
+ .exibir{
+   display: flex !important;
+   justify-content: center;
+   align-items: center;
+   }
+ #fundo_modal{
+   display: none;
+   background-color: rgba(0, 0, 0, 0.534);
+   position: absolute;
+   height: 100vh;
+   width: 100vw;
+   z-index: 1;
+ }

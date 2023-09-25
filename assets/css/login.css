@@ -6,11 +6,10 @@
 
 .cardLogin{
    position: absolute;
-   margin-left: 25%;
    display: flex;
    width: 50%;
    height: 80%;
-   background-color: aqua;
+   background-color: var(--azul-dark-mode);
    border-radius: 10px;
    flex-direction: column;
 }

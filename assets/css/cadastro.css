@@ -2,15 +2,15 @@
 
 .containerCadastro {
     display: none;
+    
 }
 
 .cardCadastro{
    position: absolute;
-   margin-left: 25%;
    display: flex;
    width: 50%;
    height: 80%;
-   background-color: aqua;
+   background-color: var(--azul-dark-mode);
    border-radius: 10px;
    flex-direction: column;
 }
@@ -19,13 +19,13 @@
     display: flex;
     width: 100%;
     justify-content: end;
-    color: var(--azul-dark-mode);
 }
 .botaoFechar > svg {
     display: flex;
     width: 4%;
     margin-right: 2%;
     margin-top: 2%;
+    color: var(--branco-light-mode);
 }
 .nomeMonitro {
     display: flex;
