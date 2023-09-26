@@ -6,11 +6,10 @@
 
 .cardSolucao1{
    position: absolute;
-   margin-left: 10%;
    display: flex;
    width: 80%;
    height: 80%;
-   background-color: var(--azul);
+   background-color: var(--azul-dark-mode);
    border-radius: 10px;
    flex-direction: column;
 }
@@ -19,7 +18,7 @@
     display: flex;
     width: 100%;
     justify-content: end;
-    color: var(--azul-dark-mode);
+    color: var(--branco-light-mode);
 }
 .botaoFecharSolucao1 > svg {
     display: flex;
@@ -72,7 +71,7 @@
 
 .botaoSolucao1 {
     width:35%;
-    height: 10%;
+    height: 15%;
     background-color: var(--azul);
     border-radius: 15px;
     font-family: "poppins";

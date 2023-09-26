@@ -16,3 +16,7 @@ function trocarExibicaoModalLogin() {
     trocarExibicaoFundo()
     modalLogin.classList.toggle("exibir")
 }
+function trocarExibicaoModalSaibaMais() {
+    trocarExibicaoFundo()
+    modalSolucao1.classList.toggle("exibir")
+}

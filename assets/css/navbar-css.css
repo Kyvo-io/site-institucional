@@ -30,9 +30,6 @@
 
   }
 
-
-
-
   .elementos {
     display: flex;
     justify-content: space-evenly;
@@ -60,7 +57,7 @@
   }
 
   li a {
-    color: white;
+    color: var(--branco-light-modes);
     text-decoration: none;
 
 }

@@ -23,8 +23,6 @@
 }
 .redesSociais{
     display: flex;
-    align-items: center;
-    display: flex;
     width: 100%;
     flex-direction: column;
     font-family: "poppins";
@@ -81,8 +79,6 @@
     position: absolute;
     align-items: center;
     z-index: 0;
-
-
 }
 
 .cardContato > span {

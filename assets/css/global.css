@@ -18,22 +18,28 @@
     --azul-dark-mode: #0E1826;
     --branco-light-mode: #F2F2F2; 
  } 
-
  button {
     cursor: pointer;
     border: none;
     outline: none;
+ }
+ input {
+   outline: none;
  }
  .exibir{
    display: flex !important;
    justify-content: center;
    align-items: center;
    }
+
+
  #fundo_modal{
    display: none;
-   background-color: rgba(0, 0, 0, 0.534);
+   background-color: rgba(0, 0, 0, 0.829);
    position: absolute;
    height: 100vh;
    width: 100vw;
    z-index: 1;
  }
+
+
