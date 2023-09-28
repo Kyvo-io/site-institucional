@@ -14,10 +14,27 @@
 }
 
 :root {
+
+color-scheme: light dark;
+
     --azul: #28c8ef;
     --azul-dark-mode: #0E1826;
-    --branco-light-mode: #F2F2F2; 
+    --branco-light-mode: #F2F2F2;
  } 
+
+.light{
+   color-scheme: light;
+}
+
+html[data-theme = 'light'] {
+   --azul-dark-mode: #0E1826;
+   --branco-light-mode: #F2F2F2;
+}
+html[data-theme = 'dark'] {
+   --azul-dark-mode: #0E1826;
+   --azul: #28c8ef;
+}
+
  button {
     cursor: pointer;
     border: none;

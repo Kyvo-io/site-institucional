@@ -18,18 +18,25 @@
   .navbar {
     display: flex;
     align-items: center;
+    flex-direction: row;
   }
 
   .nav-logo {
-    width: 80%;
+    width: 40%;
     color: var(--azul);
     display: flex;
     align-items: center;
     font-size: 45px;
     font-family: 'Poppins';
-
   }
-
+.linksNav {
+  width: 50%;
+}
+.modoLightDark{
+  width:15% ;
+  display: flex;
+  justify-content: space-evenly ;
+}
   .elementos {
     display: flex;
     justify-content: space-evenly;
@@ -60,6 +67,9 @@
     color: var(--branco-light-modes);
     text-decoration: none;
 
+    &:hover{
+      color: #28c8ef;
+    }
 }
 
 .engrenagem img{
