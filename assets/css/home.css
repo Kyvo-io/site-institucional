@@ -45,8 +45,23 @@ display: flex;
 }
 .containerHomeRight > img{
     width: 70%;
-    height: 100%;
+  
     animation: animacaoCubo 5s ease-in-out infinite;
 }
+
+
+@media (max-width: 900px) {
+    .containerHome {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .containerHomeLeft {
+        width: 80%;
+    }
+    .containerHomeRight {
+        margin-top: 5%;
+    }
+    }
 
 

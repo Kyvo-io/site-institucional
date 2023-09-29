@@ -189,7 +189,6 @@
         <li class="nav-el"><a href="#integrantes">Integrantes</a></li>
         <li class="nav-el"><a href="#nossasolucao">Solução</a></li>
         <li class="nav-el"><a href="#contato">Contato</a></li>
-        </div>
         <div class="modoLightDark">
           <input type="checkbox" class="checkbox" id="chk" />
           <label class="label" for="chk">
@@ -197,8 +196,10 @@
             <i class="fas fa-sun"></i>
             <div class="ball"></div>
           </label>
-          <li><i class="fa-solid fa-gear" style="color: var(--branco-light-mode);"></i></li>
-        </div>
+        
+        </div>  
+      </div>
+        
       </ul>
     </nav>
 
@@ -223,7 +224,7 @@
 
     <div class="containerSobreNos" id="sobrenos">
       <div class="containerSobreNosLeft">
-        <span>Por que <span style="color: var(--azul)">Kyvo</span></span>
+        <span>Por que <span style="color: var(--azul)" class="kyvoSobreNos">Kyvo</span></span>
         <p>
           A palavra <span style="color: var(--azul)">kyvo.io</span> vem de
           origem grega, onde seu significado tem relação com a palavra
@@ -456,12 +457,13 @@
         </div>
       </div>
       <div class="linhaVerticalContato"></div>
+      <div class="linhaHorizontalContato"></div>
       <div class="containerContatoRight">
         <div class="cardContato">
-          <span>Entre em contato conosco agora mesmo!</span>
+          
         </div>
         <div class="cardEmail">
-          <span>Contate-nos</span>
+          <span class="titulo">Contate-nos</span>
           <input class="inputContato" placeholder="Nome Completo" />
           <input class="inputContato" placeholder="Seu Email" />
           <input class="inputContato" placeholder="Escreva sua mensagem" />

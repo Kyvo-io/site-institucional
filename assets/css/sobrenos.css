@@ -49,4 +49,33 @@ display: none;
 
 }
 
+@media (max-width: 900px) {
+    .containerSobreNos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .containerSobreNosRight {
+        display: none;
+    }
+    .containerSobreNosLeft {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .containerSobreNosLeft > span {
+        margin-left: 0%;
+        margin-top: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .textosSobreNos{ 
+        margin-left: 0;
+    }
+  }    
+
 

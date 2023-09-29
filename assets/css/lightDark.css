@@ -6,6 +6,11 @@
 .checkbox {
   opacity: 0;
 }
+.modoLightDark{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .label {
   background-color: #111;
