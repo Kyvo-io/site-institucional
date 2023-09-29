@@ -105,6 +105,7 @@
 .cardEmail > span {
     font-size: 200%;
     margin-top: 5%;
+    color: var(--azul-dark-mode);
 }
 .inputContato {
     background-color: transparent;

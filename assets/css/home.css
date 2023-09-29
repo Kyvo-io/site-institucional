@@ -19,7 +19,7 @@ display: flex;
     line-height: 1; 
 }
 .containerHomeLeft > p{
-    color: var(--azul);
+    color: var(--branco-light-mode);
     font-size: 200%;
     margin-left: 10%;
     margin-top: 6%;

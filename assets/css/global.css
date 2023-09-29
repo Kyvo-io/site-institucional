@@ -15,25 +15,10 @@
 
 :root {
 
-color-scheme: light dark;
-
     --azul: #28c8ef;
     --azul-dark-mode: #0E1826;
     --branco-light-mode: #F2F2F2;
  } 
-
-.light{
-   color-scheme: light;
-}
-
-html[data-theme = 'light'] {
-   --azul-dark-mode: #0E1826;
-   --branco-light-mode: #F2F2F2;
-}
-html[data-theme = 'dark'] {
-   --azul-dark-mode: #0E1826;
-   --azul: #28c8ef;
-}
 
  button {
     cursor: pointer;
@@ -42,6 +27,7 @@ html[data-theme = 'dark'] {
  }
  input {
    outline: none;
+   color: var(--azul-dark-mode);
  }
  .exibir{
    display: flex !important;
