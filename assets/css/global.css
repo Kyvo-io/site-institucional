@@ -45,4 +45,33 @@
    z-index: 1;
  }
 
+ .navegacao {
+   margin-top: 1000%;
+   z-index: 1;
+}
+.navegacaoManual {
+   display: flex;
+
+}
+.navegacao input{
+   display: none;
+}
+.botaoManual {
+   display: flex;
+   border: 2px solid var(--branco-light-mode);
+   border-radius: 10px;
+   padding: 6px;
+   cursor: pointer;
+   transition: 1s;
+   width: 3px;
+   height: 3px;
+}
+
+.botaoManual:not(:last-child){
+   margin-right: 30px;
+}
+.botaoManual:hover{
+   background-color: var(--branco-light-mode);
+}
+
 

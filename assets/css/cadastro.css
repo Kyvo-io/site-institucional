@@ -70,6 +70,7 @@
 .cardBranco > span {
     font-size: 200%;
     margin-bottom: 3%;
+    color: var(--azul-dark-mode);
 }
 
 .inputCadastro {

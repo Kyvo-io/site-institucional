@@ -19,6 +19,7 @@
     width: 100%;
     justify-content: end;
     color: var(--azul-dark-mode);
+    
 }
 .botaoFechar > svg {
     display: flex;

@@ -87,7 +87,7 @@
 
     
 
-    <div class="containercardSolucao1 first" id="solucao1" >
+    <div class="containercardSolucao1" id="solucao1" >
       <div class="cardSolucao1">
         <div class="botaoFecharSolucao1" onclick="trocarExibicaoModalSaibaMais()">
           <svg
@@ -109,18 +109,27 @@
           <div class="nomeMonitroSolucao1Left">
             <span>Nossa Solução</span>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet eius
-              dolorem optio, provident maxime culpa. Aliquid excepturi, ad
-              nesciunt harum cum fuga quasi officiis dolor non, fugiat assumenda
-              blanditiis voluptates.
+              Maximize o desempenho e a confiabilidade dos seus sistemas com nosso serviço de monitoramento de hardware. Fique um passo à frente, identificando e resolvendo problemas antes que impactem suas operações. Mantenha seus ativos tecnológicos sempre operando no auge com a nossa solução de monitoramento especializado.
             </p>
-            <button class="botaoSolucao1" onclick="trocarExibicaoQueroFazerParte()" >Quero fazer parte !</button>
+            <button class="botaoSolucao1" onclick="trocarExibirCadastroNaSolucao()" >Quero fazer parte !</button>
              
 
           </div>
           <div class="nomeMonitroSolucao1Right">
             <img src="assets/img/imgSolucao1.png" alt="" />
           </div>
+        </div>
+
+        
+      </div>
+      <div class="navegacao">
+        <div class="slides">
+          <input type="radio" class="radio-botao" id="botao1" name="grupoBotoes" />
+          <input type="radio" class="radio-botao" id="botao2" name="grupoBotoes" />
+        </div>
+        <div class="navegacaoManual">
+          <label class="botaoManual" for="botao1"></label>
+          <label class="botaoManual" for="botao2"></label>
         </div>
       </div>
       
@@ -155,6 +164,10 @@
               - DISCO<br />
               - RAM<br />
               - Janelas do Sistema<br />
+              - CPU<br />
+              - DISCO<br />
+              - RAM<br />
+              - Janelas do Sistema<br />
             </p>
           </div>
           <div class="nomeMonitroSolucao2Right">
@@ -162,6 +175,16 @@
             <div class="imgDashboard"></div>
           </div>
         
+        </div>
+      </div>
+      <div class="navegacao">
+        <div class="slides">
+          <input type="radio" class="radio-botao" id="botao1" name="grupoBotoes" />
+          <input type="radio" class="radio-botao" id="botao2" name="grupoBotoes" />
+        </div>
+        <div class="navegacaoManual">
+          <label class="botaoManual" for="botao1"></label>
+          <label class="botaoManual" for="botao2"></label>
         </div>
       </div>
     </div>
@@ -189,6 +212,7 @@
         <li class="nav-el"><a href="#integrantes">Integrantes</a></li>
         <li class="nav-el"><a href="#nossasolucao">Solução</a></li>
         <li class="nav-el"><a href="#contato">Contato</a></li>
+      
         </div>
         <div class="modoLightDark">
           <input type="checkbox" class="checkbox" id="chk" />
@@ -197,7 +221,7 @@
             <i class="fas fa-sun"></i>
             <div class="ball"></div>
           </label>
-          <li><i class="fa-solid fa-gear" style="color: var(--branco-light-mode);"></i></li>
+        
         </div>
       </ul>
     </nav>
@@ -258,12 +282,12 @@
             <div class="contatos">
               <div class="contato-item">
                 <a href="https://github.com/brenosouzza"
-                  ><i class="fa-brands fa-github"></i
+                target="_blank"><i class="fa-brands fa-github"></i
                 ></a>
                 <span>Github</span>
               </div>
               <div class="contato-item">
-                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"target="_blank"></i></a>
                 <span>Linkedin</span>
               </div>
             </div>
@@ -274,13 +298,13 @@
             <div class="contatos">
               <div class="contato-item">
                 <a href="https://github.com/carlosgoes0"
-                  ><i class="fa-brands fa-github"></i
+                target="_blank"><i class="fa-brands fa-github"></i
                 ></a>
                 <span>Github</span>
               </div>
               <div class="contato-item">
                 <a href="https://www.linkedin.com/in/carlos-goes-a51a6a264"
-                  ><i class="fa-brands fa-linkedin"></i
+                target="_blank"><i class="fa-brands fa-linkedin"></i
                 ></a>
                 <span>Linkedin</span>
               </div>
@@ -292,13 +316,13 @@
             <div class="contatos">
               <div class="contato-item">
                 <a href="https://github.com/lean-dro"
-                  ><i class="fa-brands fa-github"></i
+                target="_blank"><i class="fa-brands fa-github"></i
                 ></a>
                 <span>Github</span>
               </div>
               <div class="contato-item">
                 <a href="https://www.linkedin.com/in/leandro-coelho-2942a9220/"
-                  ><i class="fa-brands fa-linkedin"></i
+                target="_blank"><i class="fa-brands fa-linkedin"></i
                 ></a>
                 <span>Linkedin</span>
               </div>
@@ -312,14 +336,14 @@
             <div class="contatos">
               <div class="contato-item">
                 <a href="https://github.com/LucioGarciaRios"
-                  ><i class="fa-brands fa-github"></i
+                target="_blank"><i class="fa-brands fa-github"></i
                 ></a>
                 <span>Github</span>
               </div>
               <div class="contato-item">
                 <a
                   href="https://www.linkedin.com/in/l%C3%BAcio-garcia-rios-98488a144"
-                  ><i class="fa-brands fa-linkedin"></i
+                  target="_blank"><i class="fa-brands fa-linkedin"></i
                 ></a>
                 <span>Linkedin</span>
               </div>
@@ -331,13 +355,13 @@
             <div class="contatos">
               <div class="contato-item">
                 <a href="https://github.com/Mirella-Ot"
-                  ><i class="fa-brands fa-github"></i
+                target="_blank"><i class="fa-brands fa-github"></i
                 ></a>
                 <span>Github</span>
               </div>
               <div class="contato-item">
                 <a href="https://www.linkedin.com/in/mirella-ot-7957a2285/"
-                  ><i class="fa-brands fa-linkedin"></i
+                target="_blank"><i class="fa-brands fa-linkedin"></i
                 ></a>
                 <span>Linkedin</span>
               </div>
@@ -349,12 +373,12 @@
             <div class="contatos">
               <div class="contato-item">
                 <a href="https://github.com/RobertoTurbiani"
-                  ><i class="fa-brands fa-github"></i
+                target="_blank"><i class="fa-brands fa-github"></i
                 ></a>
                 <span>Github</span>
               </div>
               <div class="contato-item">
-                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"target="_blank"></i></a>
                 <span>Linkedin</span>
               </div>
             </div>

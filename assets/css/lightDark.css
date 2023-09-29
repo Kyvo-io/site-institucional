@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 
-
+.inversao {
+    
+}
 .checkbox {
   opacity: 0;
 }
@@ -20,8 +22,9 @@
 
 }
 
+
 .label .ball {
-  background-color: var(--branco-light-mode);
+  background-color: #ffff;
   border-radius: 50%;
   position: absolute;
   top: 2px;

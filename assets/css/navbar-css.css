@@ -32,11 +32,12 @@
   }
 .linksNav {
   width: 50%;
+  margin-left: 4%;
 }
 .modoLightDark{
-  width:15% ;
+  width:5% ;
   display: flex;
-  justify-content: space-evenly ;
+  justify-content: center ;
 }
   .elementos {
     display: flex;

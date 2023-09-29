@@ -1,6 +1,7 @@
 
 
 const checkbox = document.getElementById('chk');
+
 const lightTheme = {
   '--azul': '#28c8ef',
   '--azul-dark-mode': '#F2F2F2',
@@ -15,10 +16,9 @@ const darkTheme = {
 
 checkbox.addEventListener('change', function() {
   const isChecked = checkbox.checked
-  isChecked ? changeTheme(lightTheme) : changeTheme (darkTheme )
+  isChecked ? changeTheme(lightTheme) : changeTheme (darkTheme)
 })
 function changeTheme(theme){
-  console.log(theme)
   for (let [property, value] of Object.entries(theme)){
     changeProperty(property, value)
   }

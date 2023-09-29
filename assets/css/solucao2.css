@@ -18,7 +18,7 @@
     display: flex;
     width: 100%;
     justify-content: end;
-    color: var(--azul-dark-mode);
+    color: var(--branco-light-mode);
 }
 .botaoFecharSolucao2 > svg {
     display: flex;
@@ -43,7 +43,6 @@
     margin-left: 5%;
 }
 .detalhesMonitro {
-    display: flex;
     flex-direction: row;
 }
 .nomeMonitroSolucao2Left {
@@ -72,11 +71,11 @@
 
 
 .nomeMonitroSolucao2Right {
+    height: 100%;
     width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 10%;
 }
 .nomeMonitroSolucao2Right > img {
     width: 60%;
@@ -87,7 +86,7 @@
     height: 40vh;
     background-color: black;
     border-radius: 15%;
-    margin-bottom: 10%;
+    margin-bottom: 20%;
     margin-left: 20%;
 }
 .imgDashboard {
@@ -96,7 +95,7 @@
     height: 40vh;
     background-color: blue;
     border-radius: 15%;
-    margin-top: 20%;
+    margin-top: 10%;
     margin-right: 20%;
 
 }
