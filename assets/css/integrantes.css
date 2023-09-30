@@ -9,37 +9,34 @@
 .containerIntegrantesTitulo{
     display: flex;
     width: 100%;
-    font-weight: 600 ;
     justify-content: center;
     font-family: "poppins";
 }
 .containerIntegrantesTitulo  > span{
-    font-size: 300%;
+    font-size: 3.3000rem;
     color: var(--branco-light-mode);
-    margin-bottom: 1%;
+    margin-bottom: 1px;
 }
 
 .containerIntegrantesFotos{
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 40px;
 }
-.containerIntegrantesFotosLinha{
-    justify-content: space-around;
-    display: flex;
-    margin-top: 1%;
-}
+
 .containerIntegrantesIntegrante {
     display: flex;
     flex-direction: column;
-    width: 12%;
+    width: 500px;
     align-items: center;
     gap: 10px;
-    height: 15%;
+    height: 200px;
     color: var(--branco-light-mode);
     font-family: "poppins";
-    font-size: 120%;
+    font-size: 1.2rem;
     justify-content: center;
     text-align: center;
+    margin-top: 25px;
 }
 
 .fotoIntegrante{

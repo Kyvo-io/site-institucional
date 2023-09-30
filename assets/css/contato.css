@@ -7,26 +7,24 @@
 .containerContatoLeft {
     display: flex;
     width: 40%;
-    padding-left: 5%;   
+    padding-left: 50px;   
     flex-direction: column;
 }
 .containerContatoLeftTitulo {
     display: flex;
-    width: 100%;
     justify-content: left;
 }
 .containerContatoLeftTitulo > span{
     color: var(--branco-light-mode);
-    font-size: 250%;
+    font-size: 3rem;
     font-family: "poppins"; 
-    margin-bottom: 2%;
+    margin-bottom: 10px;
 }
 .redesSociais{
     display: flex;
-    width: 100%;
     flex-direction: column;
     font-family: "poppins";
-    margin-top: 10%;
+    margin-top: 50px;
 }
 .linhaRede {
     display: flex;
@@ -34,18 +32,18 @@
     align-items: center;
     height: 25%;
     color: var(--azul);
-    font-size: 250%;
-    margin-bottom: 10%;
+    font-size: 2rem;
+    margin-bottom: 50px;
     justify-content: left;
 }
 
 .linhaRede > svg {
-    width: 11%;
-    padding-right: 5%;
+    width: 60px;
+    padding-right: 30px;
 }
 .linhaRede > p {
     color: var(--branco-light-mode);
-    font-size: 80%;
+    font-size: 2rem;
     text-align: left;
 }
 
@@ -53,12 +51,12 @@
 
 
 .linhaVerticalContato {
-    width: 0.2%;
-    height: 70vh;
+    width: 5px;
+    height: 500px;
     background-color: var(--branco-light-mode);
     border-radius: 15px;
-    margin-top: 3%;
-    margin-left: 5%;
+    margin-top: 30px;
+    margin-left: 30px;
 }
 
 .containerContatoRight {
@@ -70,30 +68,25 @@
 .cardContato{
     display: flex;
     background-color: var(--azul);
-    width: 50%;
-    height: 50%;
+    width: 800px;
+    height: 380px;
     justify-content: center;
     font-family: "poppins";
-    margin-top: 5%;
-    flex-direction: column;
-    position: absolute;
-    align-items: center;
-    z-index: 0;
+    margin-top: 80px;
 }
 
 .cardContato > span {
-    font-size: 180%;
-    margin-bottom: 35%;
+    font-size: 1.8rem;
+    margin-top: 20px;
 }
 
 .cardEmail{
     position: absolute;
     z-index: 100;
     display: flex;
-    z-index: 100;
-    width: 45%;
-    height: 55%;
-    margin-top: 10%;
+    width: 650px;
+    height: 400px;
+    margin-top: 150px;
     background-color: var(--branco-light-mode);
 }
 
@@ -103,8 +96,8 @@
     font-family: "poppins";
 }
 .cardEmail > span {
-    font-size: 200%;
-    margin-top: 5%;
+    font-size: 2rem;
+    margin-top: 30px;
     color: var(--azul-dark-mode);
 }
 .inputContato {
@@ -114,9 +107,9 @@
     border-right: none;
     border-bottom: 1px solid ;
     font-family: "poppins";
-    font-size: 110%;
-    margin-top: 7%;
-    width: 70%;
+    font-size: 1rem;
+    margin-top: 55px;
+    width: 450px;
     outline: none;
 }
 .inputContato:hover{
@@ -124,12 +117,18 @@
 }
 
 .botaoEnviarContato {
-    width: 20%;
-    height: 12%;
+    border: none;
+    display: flex;
+    width:140px;
+    height: 50px;
     background-color: var(--azul);
     border-radius: 15px;
-    font-family: "poppins";
     color: var(--branco-light-mode);
-    font-size: 120%;
-    margin-top: 5%;
+    font-family: "poppins";
+    margin-top: 30px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1rem;
 }
