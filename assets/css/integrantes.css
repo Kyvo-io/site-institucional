@@ -2,8 +2,9 @@
 
 
 .containerIntegrantes {
-    display: flex;
+    display: flex; 
     flex-direction: column;
+    margin-top: 100px;
 }
 
 .containerIntegrantesTitulo{
@@ -21,7 +22,11 @@
 
 .containerIntegrantesFotos{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-self: center;
+    align-items: center;
+    justify-content: center;
 }
 .containerIntegrantesFotosLinha{
     justify-content: space-around;
@@ -31,13 +36,13 @@
 .containerIntegrantesIntegrante {
     display: flex;
     flex-direction: column;
-    width: 12%;
+    width: 30%;
     align-items: center;
     gap: 10px;
-    height: 15%;
+    margin-top: 20px;
     color: var(--branco-light-mode);
     font-family: "poppins";
-    font-size: 120%;
+    font-size: 20px;
     justify-content: center;
     text-align: center;
 }
@@ -98,5 +103,13 @@
 
 .roberto{
     background-image: url(../img/img-roberto.jpg);
+}
+
+@media screen and (max-width: 650px){
+    .containerIntegrantesFotos{
+        
+        flex-direction: column;
+    }
+
 }
 

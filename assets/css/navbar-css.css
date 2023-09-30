@@ -99,18 +99,21 @@
       padding: 20px;
       width: 35%;
       height: 80.3%;
-      transform: translateX(-200%);
+      transform: translateX(-300%);
+      border-right: var(--azul) 2px solid;
+      background-color: var(--azul-dark-mode);
     }
 
     .img-logo {
         display: none;
     }
 
-    .barra-lateral {
-      transform: translateX(0px);
-      transform: translateY(55%);
-  
+    .barra-lateral{
+      position: fixed;
+      transform: translateX(-140%);
+      top: 20%;
     }
+
   
     .elementos li{
       border-right: var(--azul) 2px solid;

@@ -1,6 +1,7 @@
 @import url(global.css);
 
 .containerContato {
+    margin-top: 100px;
     display: flex;
     color: black;
 }
@@ -18,13 +19,14 @@
 }
 .containerContatoLeftTitulo > span{
     color: var(--branco-light-mode);
-    font-size: 250%;
+    font-size: 40px;
     font-family: "poppins"; 
     margin-bottom: 2%;
 }
 .redesSociais{
     display: flex;
     width: 100%;
+    font-size: 30px;
     flex-direction: column;
     font-family: "poppins";
     margin-top: 10%;
@@ -35,14 +37,15 @@
     align-items: center;
     height: 25%;
     color: var(--azul);
-    font-size: 250%;
+    gap: 20px;
     margin-bottom: 10%;
     justify-content: left;
 }
 
 .linhaRede > svg {
-    width: 11%;
-    padding-right: 5%;
+    width: 35px;
+    height: 35px;
+   
 }
 .linhaRede > p {
     color: var(--branco-light-mode);
@@ -100,6 +103,7 @@
 .cardEmail{
     position: absolute;
     z-index: 100;
+    color: black;
     display: flex;
     z-index: 100;
     width: 45%;
@@ -128,6 +132,8 @@
     margin-top: 7%;
     width: 70%;
     outline: none;
+    color: black;
+    border-color: white;
 }
 .inputContato:hover{
     cursor: text;
@@ -144,9 +150,10 @@
     margin-top: 5%;
 }
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 940px){
     .containerContato{
         flex-direction: column;
+        font-size: 15px;
     }
     .linhaVerticalContato{
         display: none;
@@ -160,4 +167,38 @@
     .cardContato{
         width: 80%;
     }
+    .cardEmail{
+        width: 70%;
+    }
+}
+
+    @media screen and (max-width: 700px){
+        .containerContato{
+            flex-direction: column;
+            font-size: 15px;
+        }
+        .linhaVerticalContato{
+            display: none;
+        }
+        .linhaHorizontalContato{
+            display: flex;
+        }
+        .containerContatoRight{
+            width: 100%;
+        
+        }
+        .containerContatoLeft{
+            width: 100%;
+        }
+        .cardContato{
+            width: 90%;
+        }
+        .cardEmail{
+            width: 80%;
+            
+        }
+        .inputContato{
+            width: 90%;
+        }
+
 }
