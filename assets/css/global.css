@@ -51,8 +51,8 @@
 }
 .navegacaoManual {
    display: flex;
-
 }
+
 .navegacao input{
    display: none;
 }
@@ -65,6 +65,8 @@
    transition: 1s;
    width: 3px;
    height: 3px;
+   color: var(--branco-light-mode);
+ 
 }
 
 .botaoManual:not(:last-child){

@@ -26,7 +26,16 @@ function trocarExibicaoModalSaibaMais() {
 function trocarExibirCadastroNaSolucao(){
     modalSolucao1.classList.toggle("exibir")
     modalCadastro.classList.toggle("exibir")
+}
+function fecharModalSolucao1() {
+    trocarExibicaoFundo()
 
+    modalSolucao1.classList.toggle("exibir")
+}
+function fecharModalSolucao2() {
+    trocarExibicaoFundo()
+
+    modalSolucao2.classList.toggle("exibir")
 }
 
 botoesRadio.forEach(function(botao) {
