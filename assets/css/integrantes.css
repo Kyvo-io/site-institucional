@@ -4,6 +4,7 @@
 .containerIntegrantes {
     display: flex;
     flex-direction: column;
+    margin: 5%;
 }
 
 .containerIntegrantesTitulo{
@@ -22,6 +23,7 @@
 .containerIntegrantesFotos{
     display: flex;
     flex-direction: column;
+    margin: 5%;
 }
 .containerIntegrantesFotosLinha{
     justify-content: space-around;
@@ -44,9 +46,9 @@
 
 .fotoIntegrante{
     border-radius: 15px;
-    width: 165px;
+    width: 150px;
     background-repeat: no-repeat;
-    height: 165px;   
+    height: 150px;   
     background-size: contain;
 }
 .contatos{

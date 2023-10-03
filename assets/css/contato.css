@@ -28,6 +28,7 @@
     flex-direction: column;
     font-family: "poppins";
     margin-top: 10%;
+    font-size: 80%;
 }
 .linhaRede {
     display: flex;
@@ -148,6 +149,15 @@
     .containerContato{
         flex-direction: column;
     }
+    .cardEmail {
+        width: 70%;
+        justify-content: space-around;
+    }
+
+    .botaoEnviarContato{
+        width: 30%;
+    }
+
     .linhaVerticalContato{
         display: none;
     }
@@ -159,5 +169,8 @@
     }
     .cardContato{
         width: 80%;
+    }
+    .containerContatoLeft {
+        width: 100%;
     }
 }

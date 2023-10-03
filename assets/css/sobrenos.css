@@ -4,6 +4,16 @@
 .containerSobreNos{
 display: none;
 }
+
+.pqKyvo {
+    font-size: 370%;
+    margin-top: 5%;
+    font-family: "Poppins";
+    line-height: 1; 
+
+}
+
+
 .containerSobreNosLeft{
     display: flex;
     flex-direction: column;

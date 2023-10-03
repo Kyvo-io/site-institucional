@@ -35,6 +35,8 @@ html[data-theme = 'dark'] {
    --azul: #28c8ef;
 }
 
+
+
  button {
     cursor: pointer;
     border: none;
