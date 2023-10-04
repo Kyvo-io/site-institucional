@@ -119,7 +119,7 @@
     }
 
     .barra-lateral {
-      transform: translateX(-150%);
+      transform: translateX(-140%);
       background-color: var(--azul);
     }
 
