@@ -89,3 +89,11 @@
     font-weight: bold;
     font-size: 1rem;
 }
+
+
+@media (max-width: 900px) {
+    .containerCadastro {
+        display: none;
+    }
+}
+

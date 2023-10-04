@@ -2,8 +2,10 @@
 
 
 .containerIntegrantes {
-    display: none;
+    display: flex; 
     flex-direction: column;
+    margin-top: 100px;
+    margin: 5%;
 }
 
 .containerIntegrantesTitulo{
@@ -20,20 +22,31 @@
 
 .containerIntegrantesFotos{
     display: flex;
+
+    flex-direction: row;
     flex-wrap: wrap;
+    justify-self: center;
+    align-items: center;
+    justify-content: center;
+    margin: 5%;
+}
+.containerIntegrantesFotosLinha{
+    justify-content: space-around;
+    display: flex;
     margin-top: 40px;
 }
 
 .containerIntegrantesIntegrante {
     display: flex;
     flex-direction: column;
-    width: 500px;
+    width: 30%;
     align-items: center;
     gap: 10px;
-    height: 200px;
+    margin-top: 20px;
     color: var(--branco-light-mode);
     font-family: "poppins";
     font-size: 1.2rem;
+
     justify-content: center;
     text-align: center;
     margin-top: 25px;
@@ -41,9 +54,9 @@
 
 .fotoIntegrante{
     border-radius: 15px;
-    width: 165px;
+    width: 150px;
     background-repeat: no-repeat;
-    height: 165px;   
+    height: 150px;   
     background-size: contain;
 }
 .contatos{
@@ -95,5 +108,13 @@
 
 .roberto{
     background-image: url(../img/img-roberto.jpg);
+}
+
+@media screen and (max-width: 650px){
+    .containerIntegrantesFotos{
+        
+        flex-direction: column;
+    }
+
 }
 
