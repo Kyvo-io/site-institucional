@@ -2,7 +2,7 @@
 
 
 .containerSobreNos{
-display: none;
+display: flex;
 }
 
 .pqKyvo {
@@ -43,7 +43,7 @@ display: none;
     margin-left: 10%;
     margin-top: 5%;
     line-height: 1.2;  
-    text-align: left;
+    text-align: justify;
 }
 .containerSobreNosRight{
     width: 50%;
@@ -54,7 +54,7 @@ display: none;
 }
 .containerSobreNosRight > img{
     width: 70%;
-    height: 100%;
+    
     animation: animacaoCubo 5s ease-in-out infinite;
 
 }
@@ -70,10 +70,17 @@ display: none;
         display: none;
     }
     .containerSobreNosLeft {
+        margin-top: 5%;
         width: 80%;
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+
+    .containerSobreNosLeft p {
+        margin-left: 4.5%;
+        
     }
     .containerSobreNosLeft > span {
         margin-left: 0%;
@@ -86,6 +93,8 @@ display: none;
     .textosSobreNos{ 
         margin-left: 0;
     }
+
+
   }    
 
 
