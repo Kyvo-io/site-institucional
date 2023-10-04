@@ -6,60 +6,51 @@
 }
 
 .cardCadastro{
-   position: absolute;
    display: flex;
-   width: 50%;
-   height: 80%;
+   width: 800px;
+   height: 600px;
    background-color: var(--azul-dark-mode);
    border-radius: 10px;
    flex-direction: column;
+   align-items: center;
 }
 
-.botaoFechar{
+.botaoFecharCadastro{
     display: flex;
     width: 100%;
-    justify-content: end;
 }
 .botaoFechar > svg {
     display: flex;
-    width: 4%;
-    margin-right: 2%;
-    margin-top: 2%;
-    color: var(--branco-light-mode);
+    width: 30px;
+    margin-right: 10px;
+    margin-top: 10px;
 }
 .nomeMonitro {
     display: flex;
-    width: 100%;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    font-size: 150%;
+    font-size: 5rem;
     font-family: "baloo 2";
     color: var(--azul);
-    font-size: 550%;
 }
 .nomeMonitro > img {
-    width: 10%;
-    margin-right: 3%;
+    width: 70px;
+    margin-right: 20px;
 }
-.cardAzul{
-    position: absolute;
-    z-index: 100;
+.cardAzulCadastro{
     display: flex;
-    width: 80%;
-    height: 55%;
-    margin-top: 20%;
-    margin-left: 10%;
+    width: 750px;
+    height: 355px;
+    margin-top: 20px;
     background-color: var(--azul);
 }
-.cardBranco{
+.cardBrancoCadastro{
     position: absolute;
-    z-index: 100;
     display: flex;
-    width: 70%;
-    height: 60%;
-    margin-top: 25%;
-    margin-left: 15%;
+    width: 600px;
+    height: 350px;
+    margin-top: 200px;
     background-color: var(--branco-light-mode);
     font-family: "poppins";
     justify-content: center;
@@ -67,9 +58,9 @@
     align-items: center;
 }
 
-.cardBranco > span {
-    font-size: 200%;
-    margin-bottom: 3%;
+.cardBrancoCadastro > span {
+    font-size: 2rem;
+    color: var(--azul-dark-mode);
 }
 
 .inputCadastro {
@@ -78,19 +69,25 @@
     border-left: none;
     border-right: none;
     border-bottom: 1px solid ;
-    margin-top: 5%;
-    width: 70%;
-    font-size: 110%;
+    margin-top: 30px;
+    width: 450px;
+    font-size: 1rem;
 }
 .botaoEnviarCadastro{
-    width: 20%;
-    height: 12%;
+    border: none;
+    display: flex;
+    width:140px;
+    height: 50px;
     background-color: var(--azul);
     border-radius: 15px;
-    font-family: "poppins";
     color: var(--branco-light-mode);
-    font-size: 120%;
-    margin-top: 5%;
+    font-family: "poppins";
+    margin-top: 30px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1rem;
 }
 
 
@@ -98,4 +95,5 @@
     .containerCadastro {
         display: none;
     }
-    }
+}
+

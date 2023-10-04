@@ -16,31 +16,28 @@
 
 .botaoFecharSolucao1{
     display: flex;
-    width: 100%;
     justify-content: end;
     color: var(--branco-light-mode);
 }
 .botaoFecharSolucao1 > svg {
     display: flex;
-    width: 2%;
-    margin-right: 2%;
-    margin-top: 2%;
+    width: 30px;
+    margin-right: 10px;
+    margin-top: 10px;
 }
 .nomeMonitroSolucao1 {
     display: flex;
-    width: 100%;
     flex-direction: row;
     align-items: center;
     justify-content: left;
-    font-size: 150%;
+    font-size: 6rem;
     font-family: "baloo 2";
     color: var(--azul);
-    font-size: 500%;
 }
 .nomeMonitroSolucao1 > img {
-    width: 8%;
-    margin-right: 3%;
-    margin-left: 5%;
+    width: 90px;
+    margin-right: 30px;
+    margin-left: 60px;
 }
 .detalhesMonitro {
     display: flex;
@@ -49,35 +46,41 @@
 .nomeMonitroSolucao1Left {
     display: flex;
     width: 50%;
-    margin-left: 5%;
+    margin-left: 60px;
     flex-direction: column;
 }
 
 .nomeMonitroSolucao1Left > span {
     display: flex;
     font-family: "poppins";
-    font-size: 250%;
+    font-size: 2.5rem;
     color: var(--branco-light-mode);
-    margin-top: 5%;
+    margin-top: 30px;
 }
 
 .nomeMonitroSolucao1Left > p {
-    margin-top: 5%;
+    margin-top: 30px;
     font-family: "poppins";
-    font-size: 140%;
-    line-height: 1;
+    font-size: 1.3rem;
+    line-height: 1.2;
     color: var(--branco-light-mode);
 }
 
 .botaoSolucao1 {
-    width:35%;
-    height: 15%;
+    border: none;
+    display: flex;
+    width:180px;
+    height: 60px;
     background-color: var(--azul);
     border-radius: 15px;
-    font-family: "poppins";
     color: var(--branco-light-mode);
-    font-size: 110%;
-    margin-top: 10%;
+    font-family: "poppins";
+    margin-top: 30px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1rem;
 }
 
 .nomeMonitroSolucao1Right {
@@ -87,5 +90,5 @@
     justify-content: center;
 }
 .nomeMonitroSolucao1Right > img {
-    width: 60%;
+    width: 300px;
 }

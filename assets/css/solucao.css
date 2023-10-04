@@ -7,26 +7,24 @@
 .containerSolucaoLeft {
     display: flex;
     width: 55%;
-    padding-left: 5%;
-    margin-top: 2%;
+    padding-left: 60px;
+    margin-top: 25px;
     flex-direction: column;
 }
 .containerSolucaoLeftTitulo {
     display: flex;
-    width: 100%;
     justify-content: left;
     align-items: center;
 }
 .containerSolucaoLeftTitulo > span{
     color: var(--branco-light-mode);
-    font-size: 600%;
+    font-size: 6rem;
     font-family: "baloo 2"; 
     color: var(--azul);
 }
 .containerSolucaoLeftTitulo > img{
-    padding-right: 3%;
-    width: 10%;
-    height: 90%;
+    padding-right: 25px;
+    width: 100px;
 }
 .textoMonitro{
     display: flex;
@@ -37,32 +35,32 @@
     color: var(--branco-light-mode);
     font-family: "poppins";
     line-height: 1.5;
-    margin-top: 3%;
-    font-size: 150%;
+    margin-top: 50px;
+    font-size: 1.5rem;
 }
 .botaoSaibaMais {
     border: none;
     display: flex;
-    width: 20%;
-    height: 8vh;
+    width: 180px;
+    height: 60px;
     background-color: var(--azul);
     border-radius: 15px;
     color: var(--branco-light-mode);
     font-family: "poppins";
-    margin-top: 8%;
+    margin-top: 70px;
     text-align: center;
     justify-content: center;
     align-items: center;
     font-weight: bold;
-    font-size: 110%;
+    font-size: 1rem;
 }
 .linhaVertical {
-    width: 0.2%;
-    height: 70vh;
+    width: 5px;
+    height: 500px;
     background-color: var(--branco-light-mode);
     border-radius: 15px;
-    margin-top: 3%;
-    margin-left: 5%;
+    margin-top: 50px;
+    margin-left: 100px;
 }
 
 .containerSolucaoRight {
@@ -73,29 +71,29 @@
 }
 
 .cardMonitro {
-    margin-top: 8%;
-    width: 60%;
-    height: 80%;
+    margin-top: 50px;
+    width: 400px;
+    height: 450px;
     border-radius: 15px;
     background-color: var(--branco-light-mode);
 }
 .tituloCard{
     display: flex;
     flex-direction: column;
-    font-size: 400%;
+    font-size: 4rem;
     font-family: "baloo 2"; 
     color: var(--azul);
     align-items: center;
-    margin-top: 10%;
+    margin-top: 40px;
 }
 .tituloCard > img {
-    margin-bottom: 3%;
-    width: 20%;
+    margin-bottom: 30px;
+    width: 90px;
 }
 .tituloCard > p {
     color: var(--azul-dark-mode);
-    font-size: 45%;
-    margin-top: 10% ;
+    font-size: 2rem;
+    margin-top: 20px ;
 }
 
 .botoesCardMonitro{
@@ -103,38 +101,38 @@
     width: 100%;
     flex-direction: row;
     justify-content: space-around;
-    margin-top: 10%;
+    margin-top: 30px;
 }
 .botaoCadastrar {
     border: none;
     display: flex;
-    width:35%;
-    height: 8vh;
+    width:140px;
+    height: 60px;
     background-color: var(--azul);
     border-radius: 15px;
     color: var(--branco-light-mode);
     font-family: "poppins";
-    margin-top: 8%;
+    margin-top: 30px;
     text-align: center;
     justify-content: center;
     align-items: center;
     font-weight: bold;
-    font-size: 110%;
+    font-size: 1rem;
 }
 
 .botaoSLogin {
     border: none;
     display: flex;
-    width: 35%;
-    height: 8vh;
+    width:140px;
+    height: 60px;
     background-color: var(--azul);
     border-radius: 15px;
     color: var(--branco-light-mode);
     font-family: "poppins";
-    margin-top: 8%;
+    margin-top: 30px;
     text-align: center;
     justify-content: center;
     align-items: center;
     font-weight: bold;
-    font-size: 110%;
+    font-size: 1rem;
 }

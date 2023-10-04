@@ -7,18 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Kyvo.io</title>
 
-    <link rel="stylesheet" href="assets/css/reset.css"/>
-    <link rel="stylesheet" href="assets/css/navbar-css.css"/>
-    <link rel="stylesheet" href="assets/css/home.css"/>
-    <link rel="stylesheet" href="assets/css/sobrenos.css"/>
-    <link rel="stylesheet" href="assets/css/integrantes.css"/>
-    <link rel="stylesheet" href="assets/css/solucao.css"/>
-    <link rel="stylesheet" href="assets/css/contato.css"/>
-    <link rel="stylesheet" href="assets/css/cadastro.css"/>
-    <link rel="stylesheet" href="assets/css/login.css"/>
-    <link rel="stylesheet" href="assets/css/solucao1.css"/>
-    <link rel="stylesheet" href="assets/css/solucao2.css"/>
-    <link rel="stylesheet" href="assets/css/lightDark.css">
+
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/navbar-css.css" />
+    <link rel="stylesheet" href="assets/css/home.css" />
+    <link rel="stylesheet" href="assets/css/sobrenos.css" />
+    <link rel="stylesheet" href="assets/css/integrantes.css" />
+    <link rel="stylesheet" href="assets/css/solucao.css" />
+    <link rel="stylesheet" href="assets/css/contato.css" />
+    <link rel="stylesheet" href="assets/css/cadastro.css" />
+    <link rel="stylesheet" href="assets/css/login.css" />
+    <link rel="stylesheet" href="assets/css/solucao1.css" />
+    <link rel="stylesheet" href="assets/css/solucao2.css" />
+    <link rel="stylesheet" href="assets/css/lightDark.css">]
+    <link rel="icon" type="image" href="assets/img/logoCubo.png">
+
  
     <style type="text/css" id="operaUserStyle"></style>
   </head>
@@ -42,8 +45,8 @@
           <img src="assets/img/Group 1 fundo azul.png" alt=""/>
           <span>monitro</span>
         </div>
-        <div class="cardAzul"></div>
-        <div class="cardBranco">
+        <div class="cardAzulCadastro"></div>
+        <div class="cardBrancoCadastro">
           <span>Cadastro</span>
           <input class="inputCadastro" placeholder="Nome do Responsável"/>
           <input class="inputCadastro" placeholder="Nome da Empresa"/>
@@ -65,8 +68,8 @@
           <img src="assets/img/Group 1 fundo azul.png" alt=""/>
           <span>monitro</span>
         </div>
-        <div class="cardAzul"></div>
-        <div class="cardBranco">
+        <div class="cardAzulLogin"></div>
+        <div class="cardBrancoLogin">
           <span>Login</span>
           <input class="inputLogin" placeholder="Seu Email" />
           <input class="inputLogin" placeholder="Senha" type="password"/>
@@ -78,11 +81,13 @@
 
     
 
+
     <div class="containercardSolucao1 first" id="solucao1">
       <div class="cardSolucao1">
-        <div class="botaoFecharSolucao1" onclick="trocarExibicaoModalSaibaMais()">
+        <div class="botaoFecharSolucao1" onclick="fecharModalSolucao1()">
           <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
             <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+
           </svg>
         </div>
         <div class="nomeMonitroSolucao1">
@@ -93,18 +98,27 @@
           <div class="nomeMonitroSolucao1Left">
             <span>Nossa Solução</span>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet eius
-              dolorem optio, provident maxime culpa. Aliquid excepturi, ad
-              nesciunt harum cum fuga quasi officiis dolor non, fugiat assumenda
-              blanditiis voluptates.
+              Maximize o desempenho e a confiabilidade dos seus sistemas com nosso serviço de monitoramento de hardware. Fique um passo à frente, identificando e resolvendo problemas antes que impactem suas operações. Mantenha seus ativos tecnológicos sempre operando no auge com a nossa solução de monitoramento especializado.
             </p>
-            <button class="botaoSolucao1" onclick="trocarExibicaoQueroFazerParte()">Quero fazer parte !</button>
-             
 
+            <button class="botaoSolucao1" onclick="trocarExibirCadastroNaSolucao()" >Quero fazer parte !</button>
+             
           </div>
           <div class="nomeMonitroSolucao1Right">
             <img src="assets/img/imgSolucao1.png" alt=""/>
           </div>
+        </div>
+
+        
+      </div>
+      <div class="navegacao">
+        <div class="slides">
+          <input type="radio" class="radio-botao" id="botao1" name="grupoBotoes" />
+          <input type="radio" class="radio-botao" id="botao2" name="grupoBotoes" />
+        </div>
+        <div class="navegacaoManual">
+          <label class="botaoManual" for="botao1"></label>
+          <label class="botaoManual" for="botao2"></label>
         </div>
       </div>
       
@@ -112,9 +126,17 @@
 
     <div class="containercardSolucao2" id="solucao2">
       <div class="cardSolucao2">
-        <div class="botaoFecharSolucao2" onclick="trocarExibicaoModalSaibaMais()">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
-            <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+
+        <div class="botaoFecharSolucao2" onclick="fecharModalSolucao2()">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            class="bi bi-x-lg"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"
+            />
           </svg>
         </div>
         <div class="nomeMonitroSolucao2">
@@ -124,14 +146,19 @@
         <div class="detalhesMonitro">
           <div class="nomeMonitroSolucao2Left">
             <span>Captura de Dados e Geolocalização </span>
-            <p>
-              Monitoramos componentes de hardware para garantir desempenho e
-              estabilidade do sistema.
-              <br/><br/>
-              - CPU<br/>
-              - DISCO<br/>
-              - RAM<br/>
-              - Janelas do Sistema<br/>
+
+           
+             <h3> Monitoramos os seguintes componentes de hardware para garantir desempenho e
+              estabilidade do sistema.</h3>
+              <br /><br />
+              <p>
+              - CPU<br />
+              - DISCO<br />
+              - RAM<br />
+              - Janelas do Sistema<br />
+              - DISCO<br />
+              - RAM<br />
+              - Janelas do Sistema<br />
             </p>
           </div>
           <div class="nomeMonitroSolucao2Right">
@@ -139,6 +166,16 @@
             <div class="imgDashboard"></div>
           </div>
         
+        </div>
+      </div>
+      <div class="navegacao">
+        <div class="slides">
+          <input type="radio" class="radio-botao" id="botao1" name="grupoBotoes" />
+          <input type="radio" class="radio-botao" id="botao2" name="grupoBotoes" />
+        </div>
+        <div class="navegacaoManual">
+          <label class="botaoManual" for="botao1"></label>
+          <label class="botaoManual" for="botao2"></label>
         </div>
       </div>
     </div>
@@ -171,6 +208,7 @@
         <li class="nav-el"><a href="#integrantes">Integrantes</a></li>
         <li class="nav-el"><a href="#nossasolucao">Solução</a></li>
         <li class="nav-el"><a href="#contato">Contato</a></li>
+
         <div class="modoLightDark">
           <input type="checkbox" class="checkbox" id="chk" />
           <label class="label" for="chk">
@@ -178,10 +216,10 @@
             <i class="fas fa-sun"></i>
             <div class="ball"></div>
           </label>
-        
         </div>  
       </div>
         
+
       </ul>
     </nav>
 
@@ -231,119 +269,145 @@
       </div>
     </div>
 
+
     <div class="containerIntegrantes" id="integrantes">
       <div class="containerIntegrantesTitulo">
         <span>Conheça nossa equipe</span>
       </div>
 
       <div class="containerIntegrantesFotos">
-        <div class="containerIntegrantesIntegrante">
-          <div class="fotoIntegrante breno"></div>
-          <div class="contatos">
-            <div class="contato-item">
-              <a href="https://github.com/brenosouzza"
-                ><i class="fa-brands fa-github"></i
-              ></a>
-              <span>Github</span>
-            </div>
-            <div class="contato-item">
-              <a href=""><i class="fa-brands fa-linkedin"></i></a>
-              <span>Linkedin</span>
-            </div>
-          </div>
-          <span>Breno Souza</span>
-        </div>
-        <div class="containerIntegrantesIntegrante">
-          <div class="fotoIntegrante carlos"></div>
-          <div class="contatos">
-            <div class="contato-item">
-              <a href="https://github.com/carlosgoes0"
-                ><i class="fa-brands fa-github"></i
-              ></a>
-              <span>Github</span>
-            </div>
-            <div class="contato-item">
-              <a href="https://www.linkedin.com/in/carlos-goes-a51a6a264"
-                ><i class="fa-brands fa-linkedin"></i
-              ></a>
-              <span>Linkedin</span>
+
+          <div class="containerIntegrantesIntegrante">
+            <div class="fotoIntegrante breno"></div>
+            <div class="contatos">
+              <div class="contato-item">
+                <a href="https://github.com/brenosouzza"
+                target="_blank"><i class="fa-brands fa-github"></i
+                ></a>
+                <span>Github</span>
+              </div>
+              <div class="contato-item">
+                <a href=""><i class="fa-brands fa-linkedin"target="_blank"></i></a>
+                <span>Linkedin</span>
+              </div>
+
             </div>
           </div>
-          <span>Carlos Henrique</span>
-        </div>
-        <div class="containerIntegrantesIntegrante">
-          <div class="fotoIntegrante leandro"></div>
-          <div class="contatos">
-            <div class="contato-item">
-              <a href="https://github.com/lean-dro"
-                ><i class="fa-brands fa-github"></i
-              ></a>
-              <span>Github</span>
-            </div>
-            <div class="contato-item">
-              <a href="https://www.linkedin.com/in/leandro-coelho-2942a9220/"
-                ><i class="fa-brands fa-linkedin"></i
-              ></a>
-              <span>Linkedin</span>
-            </div>
-          </div>
-          <span>Leandro Coelho</span>
-        </div>
-        <div class="containerIntegrantesIntegrante">
-          <div class="fotoIntegrante lucio"></div>
-          <div class="contatos">
-            <div class="contato-item">
-              <a href="https://github.com/LucioGarciaRios"
-                ><i class="fa-brands fa-github"></i
-              ></a>
-              <span>Github</span>
-            </div>
-            <div class="contato-item">
-              <a
-                href="https://www.linkedin.com/in/l%C3%BAcio-garcia-rios-98488a144"
-                ><i class="fa-brands fa-linkedin"></i
-              ></a>
-              <span>Linkedin</span>
+
+
+
+          <div class="containerIntegrantesIntegrante">
+            <div class="fotoIntegrante carlos"></div>
+            <div class="contatos">
+              <div class="contato-item">
+                <a href="https://github.com/carlosgoes0"
+                target="_blank"><i class="fa-brands fa-github"></i
+                ></a>
+                <span>Github</span>
+              </div>
+              <div class="contato-item">
+                <a href="https://www.linkedin.com/in/carlos-goes-a51a6a264"
+                target="_blank"><i class="fa-brands fa-linkedin"></i
+                ></a>
+                <span>Linkedin</span>
+              </div>
+
             </div>
           </div>
-          <span>Lúcio Rios</span>
-        </div>
-        <div class="containerIntegrantesIntegrante">
-          <div class="fotoIntegrante mirella"></div>
-          <div class="contatos">
-            <div class="contato-item">
-              <a href="https://github.com/Mirella-Ot"
-                ><i class="fa-brands fa-github"></i
-              ></a>
-              <span>Github</span>
-            </div>
-            <div class="contato-item">
-              <a href="https://www.linkedin.com/in/mirella-ot-7957a2285/"
-                ><i class="fa-brands fa-linkedin"></i
-              ></a>
-              <span>Linkedin</span>
-            </div>
-          </div>
-          <span>Mirella Ot</span>
-        </div>
-        <div class="containerIntegrantesIntegrante">
-          <div class="fotoIntegrante roberto"></div>
-          <div class="contatos">
-            <div class="contato-item">
-              <a href="https://github.com/RobertoTurbiani"
-                ><i class="fa-brands fa-github"></i
-              ></a>
-              <span>Github</span>
-            </div>
-            <div class="contato-item">
-              <a href=""><i class="fa-brands fa-linkedin"></i></a>
-              <span>Linkedin</span>
+
+          <div class="containerIntegrantesIntegrante">
+            <div class="fotoIntegrante leandro"></div>
+            <div class="contatos">
+              <div class="contato-item">
+                <a href="https://github.com/lean-dro"
+                target="_blank"><i class="fa-brands fa-github"></i
+                ></a>
+                <span>Github</span>
+              </div>
+              <div class="contato-item">
+                <a href="https://www.linkedin.com/in/leandro-coelho-2942a9220/"
+                target="_blank"><i class="fa-brands fa-linkedin"></i
+                ></a>
+                <span>Linkedin</span>
+              </div>
+
             </div>
           </div>
+
+       
+
+          <div class="containerIntegrantesIntegrante">
+            <div class="fotoIntegrante lucio"></div>
+            <div class="contatos">
+              <div class="contato-item">
+                <a href="https://github.com/LucioGarciaRios"
+                target="_blank"><i class="fa-brands fa-github"></i
+                ></a>
+                <span>Github</span>
+              </div>
+              <div class="contato-item">
+                <a
+                  href="https://www.linkedin.com/in/l%C3%BAcio-garcia-rios-98488a144"
+                  target="_blank"><i class="fa-brands fa-linkedin"></i
+                ></a>
+                <span>Linkedin</span>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="containerIntegrantesIntegrante">
+            <div class="fotoIntegrante mirella"></div>
+            <div class="contatos">
+              <div class="contato-item">
+                <a href="https://github.com/Mirella-Ot"
+                target="_blank"><i class="fa-brands fa-github"></i
+                ></a>
+                <span>Github</span>
+              </div>
+              <div class="contato-item">
+                <a href="https://www.linkedin.com/in/mirella-ot-7957a2285/"
+                target="_blank"><i class="fa-brands fa-linkedin"></i
+                ></a>
+                <span>Linkedin</span>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="containerIntegrantesIntegrante">
+            <div class="fotoIntegrante roberto"></div>
+            <div class="contatos">
+              <div class="contato-item">
+                <a href="https://github.com/RobertoTurbiani"
+                target="_blank"><i class="fa-brands fa-github"></i
+                ></a>
+                <span>Github</span>
+              </div>
+              <div class="contato-item">
+                <a href=""><i class="fa-brands fa-linkedin"target="_blank"></i></a>
+                <span>Linkedin</span>
+              </div>
+
+            </div>
+          </div>
+
           <span>Roberto Turbiani</span>
         </div>
+
       </div>
+          </div>
+
+
     </div>
+
+
+
+
+
+
+
+
     <div class="containerSolucao" id="nossasolucao">
       <div class="containerSolucaoLeft">
         <div class="containerSolucaoLeftTitulo">
@@ -376,6 +440,8 @@
         </div>
       </div>
     </div>
+
+    
     <div class="containerContato" id="contato">
       <div class="containerContatoLeft">
         <div class="containerContatoLeftTitulo">
@@ -470,4 +536,9 @@
   botaoNav.addEventListener("click", alternar);
 </script>
 <script src="assets/js/modais.js"></script>
+
 <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+
+
+<script src="assets/js/lightDark.js"></script>
+

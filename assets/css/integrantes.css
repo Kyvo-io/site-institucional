@@ -11,18 +11,18 @@
 .containerIntegrantesTitulo{
     display: flex;
     width: 100%;
-    font-weight: 600 ;
     justify-content: center;
     font-family: "poppins";
 }
 .containerIntegrantesTitulo  > span{
-    font-size: 300%;
+    font-size: 3.3000rem;
     color: var(--branco-light-mode);
-    margin-bottom: 1%;
+    margin-bottom: 1px;
 }
 
 .containerIntegrantesFotos{
     display: flex;
+
     flex-direction: row;
     flex-wrap: wrap;
     justify-self: center;
@@ -33,8 +33,9 @@
 .containerIntegrantesFotosLinha{
     justify-content: space-around;
     display: flex;
-    margin-top: 1%;
+    margin-top: 40px;
 }
+
 .containerIntegrantesIntegrante {
     display: flex;
     flex-direction: column;
@@ -44,9 +45,11 @@
     margin-top: 20px;
     color: var(--branco-light-mode);
     font-family: "poppins";
-    font-size: 20px;
+    font-size: 1.2rem;
+
     justify-content: center;
     text-align: center;
+    margin-top: 25px;
 }
 
 .fotoIntegrante{

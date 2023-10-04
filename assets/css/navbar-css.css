@@ -12,7 +12,7 @@
   }
 
   body {
-    background-color: #0E1826;
+    background-color: var(--azul-dark-mode);
   }
 
   .navbar {
@@ -28,14 +28,16 @@
     align-items: center;
     font-size: 45px;
     font-family: 'Poppins';
+    font-weight: bold;
   }
 .linksNav {
   width: 50%;
+  margin-left: 4%;
 }
 .modoLightDark{
-  width:15% ;
+  width:5% ;
   display: flex;
-  justify-content: space-evenly ;
+  justify-content: center ;
 }
   .elementos {
     display: flex;
@@ -43,7 +45,7 @@
     list-style: none;
     padding-top: 10px;
     padding-bottom: 10px;
-    color: whitesmoke;
+    color: var(--branco-light-mode);
     font-weight: 500;
     font-size: 20px;
     font-family: 'Poppins';

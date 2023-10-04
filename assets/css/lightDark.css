@@ -19,7 +19,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   padding: 5px;
   position: relative;
   height: 15px;
@@ -30,7 +29,7 @@
 
 
 .label .ball {
-  background-color: var(--branco-light-mode);
+  background-color: #ffff;
   border-radius: 50%;
   position: absolute;
   top: 2px;
