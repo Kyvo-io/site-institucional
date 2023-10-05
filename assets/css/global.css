@@ -15,12 +15,11 @@
 
 :root {
 
-color-scheme: light dark;
-
     --azul: #28c8ef;
     --azul-dark-mode: #0E1826;
     --branco-light-mode: #F2F2F2;
  } 
+
 
 .light{
    color-scheme: light;
@@ -42,6 +41,7 @@ html[data-theme = 'dark'] {
  }
  input {
    outline: none;
+   color: var(--azul-dark-mode);
  }
  .exibir{
    display: flex !important;
@@ -58,5 +58,36 @@ html[data-theme = 'dark'] {
    width: 100vw;
    z-index: 1;
  }
+
+ .navegacao {
+   margin-top: 500px;
+   z-index: 1;
+}
+.navegacaoManual {
+   display: flex;
+}
+
+.navegacao input{
+   display: none;
+}
+.botaoManual {
+   display: flex;
+   border: 2px solid var(--branco-light-mode);
+   border-radius: 10px;
+   padding: 6px;
+   cursor: pointer;
+   transition: 1s;
+   width: 3px;
+   height: 3px;
+   color: var(--branco-light-mode);
+ 
+}
+
+.botaoManual:not(:last-child){
+   margin-right: 30px;
+}
+.botaoManual:hover{
+   background-color: var(--branco-light-mode);
+}
 
 
