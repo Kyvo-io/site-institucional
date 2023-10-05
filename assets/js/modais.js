@@ -38,6 +38,7 @@ function fecharModalSolucao2() {
     modalSolucao2.classList.toggle("exibir")
 }
 
+
 botoesRadio.forEach(function(botao) {
   botao.addEventListener('change', function() {
     if(botao1_isChecked){

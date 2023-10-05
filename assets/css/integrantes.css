@@ -2,10 +2,8 @@
 
 
 .containerIntegrantes {
-    display: flex; 
+    display: none; 
     flex-direction: column;
-    margin-top: 100px;
-    margin: 5%;
 }
 
 .containerIntegrantesTitulo{
@@ -17,18 +15,15 @@
 .containerIntegrantesTitulo  > span{
     font-size: 3.3000rem;
     color: var(--branco-light-mode);
-    margin-bottom: 1px;
 }
 
 .containerIntegrantesFotos{
     display: flex;
-
     flex-direction: row;
     flex-wrap: wrap;
     justify-self: center;
     align-items: center;
     justify-content: center;
-    margin: 5%;
 }
 .containerIntegrantesFotosLinha{
     justify-content: space-around;
@@ -54,9 +49,9 @@
 
 .fotoIntegrante{
     border-radius: 15px;
-    width: 150px;
+    width: 180px;
     background-repeat: no-repeat;
-    height: 150px;   
+    height: 180px;   
     background-size: contain;
 }
 .contatos{

@@ -1,8 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 
-.inversao {
-    
-}
 .checkbox {
   opacity: 0;
 }
@@ -46,10 +42,12 @@
   transform: translateX(24px);
 }
 
-.fa-moon {
+.lua > svg{
   color: #f1c40f;
+  padding-right: 10px;
+  
 }
 
-.fa-sun {
+.sol {
   color: #f39c12;
 }

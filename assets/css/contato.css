@@ -1,8 +1,7 @@
 @import url(global.css);
 
 .containerContato {
-    margin-top: 100px;
-    display: flex;
+    display: none;
     color: black;
 }
 
@@ -128,7 +127,7 @@
     margin-top: 55px;
     width: 450px;
     outline: none;
-    color: black;
+    color: var(--azul-dark-mode);
     border-color: white;
 }
 .inputContato:hover{
@@ -160,7 +159,6 @@
         width: 70%;
         justify-content: space-around;
     }
-
     .botaoEnviarContato{
         width: 30%;
     }

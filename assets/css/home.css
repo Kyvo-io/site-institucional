@@ -43,8 +43,7 @@
     justify-content: center;
 }
 .containerHomeRight > img{
-    width: 70%;
-  
+    width: 550px;
     animation: animacaoCubo 5s ease-in-out infinite;
 }
 
