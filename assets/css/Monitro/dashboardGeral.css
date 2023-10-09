@@ -1,5 +1,5 @@
 .dashboardGeral{
-    display: flex;
+    display: none;
     font-family: "poppins";
     color: var(--branco-light-mode);
 }
@@ -17,6 +17,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    overflow-y: scroll;
 }
 .referenciaMaquina{
     display: flex;
