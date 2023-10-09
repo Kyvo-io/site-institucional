@@ -1,0 +1,19 @@
+.cadastroServidor{
+    display: flex;
+    font-family: "poppins";
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cadastroServidor > span {
+    font-size: 1.8rem;
+    color: var(--azul);
+    font-weight: bold;
+}
+.containerCadastroServidor {
+    background-color: var(--branco-light-mode);
+    width: 500px;
+    height: 500px;
+    border-radius: 15px;
+    margin-top: 20px;
+}

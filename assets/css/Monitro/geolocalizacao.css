@@ -1,6 +1,6 @@
 
 .containerGeolocalizacao{
-    display: flex;
+    display: none;
     font-family: "poppins";
     color: var(--branco-light-mode);
 }
