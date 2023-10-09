@@ -1,0 +1,89 @@
+.dashboardGeral{
+    display: flex;
+    font-family: "poppins";
+    color: var(--branco-light-mode);
+}
+.dashboardGeralLeft {
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+}
+.dashboardGeralLeft > span {
+    font-size: 1.3rem;
+    margin-left: 50px;
+    font-weight: bold;
+}
+.maquinasCadastradas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.referenciaMaquina{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    color: var(--azul-dark-mode);
+    margin-top: 20px;
+}
+.referenciaMaquina > span {
+    font-size: 1.3rem;
+    color: var(--branco-light-mode);
+}
+.cardMaquina{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 280px;
+    background-color: var(--branco-light-mode);
+    border-radius: 15px;
+    margin-top: 20px;
+    justify-content: left;
+    align-items: center;
+    
+}
+.cardMaquina > span {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    font-weight: bold;
+}
+.descricaoMaquina > p {
+    justify-content: left;
+    font-size: 1.1rem;
+    margin-top: 10px;
+    font-weight: bold;
+}
+p {
+    display: flex;
+    align-items: center;
+}
+p > svg {
+    margin-right: 20px;
+}
+
+.dashboardGeralRight {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 160px;
+    width: 30%;
+}
+.dashboardGeralRight > span {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    font-weight: bold;
+}
+.cardAlertas{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 280px;
+    background-color: var(--branco-light-mode);
+    border-radius: 15px;
+    margin-top: 20px;
+    justify-content: left;
+    align-items: center;
+    
+}
