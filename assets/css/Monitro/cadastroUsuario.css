@@ -1,16 +1,16 @@
-.cadastroServidor{
-    display: flex;
+.cadastroUsuario{
+    display: none;
     font-family: "poppins";
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.cadastroServidor > span {
+.cadastroUsuario > span {
     font-size: 1.8rem;
     color: var(--azul);
     font-weight: bold;
 }
-.containerCadastroServidor {
+.containerCadastroUsuario {
     display: flex;
     background-color: var(--branco-light-mode);
     width: 500px;
@@ -23,14 +23,14 @@
     padding-top: 40px;
 }
 
-.inputCadastroServidor {
+.inputCadastroUsuario {
     width: 350px;
     border: none;
     background-color: transparent;
     border-bottom: 2px solid var(--azul-dark-mode);
     font-size: 1.3rem;
 }
-.botaoCadastroServidor {
+.botaoCadastroUsuario {
     background-color: var(--azul-dark-mode);
     color: var(--branco-light-mode);
     width: 150px;

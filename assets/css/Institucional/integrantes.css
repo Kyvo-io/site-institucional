@@ -79,30 +79,24 @@
 }
 .containerIntegrantesIntegrante:hover>.contatos{
     display: flex;
-    
 }
 .carlos{
-    background-image: url(../img/img-carlos.jpg);
+    background-image: url(../../img/img-carlos.jpg);
 }
-
 .breno{
-    background-image: url(../img/img-breno.jpg);
+    background-image: url(../../img/img-breno.jpg);
 }
-
 .leandro{
-    background-image: url(../img/foto-leandro.jpg);
+    background-image: url(../../img/foto-leandro.jpg);
 }
-
 .lucio{
-    background-image: url(../img/img-lucio.jpg);
+    background-image: url(../../img/img-lucio.jpg);
 }
-
 .mirella{
-    background-image: url(../img/img-Mirella.jpg);
+    background-image: url(../../img/img-Mirella.jpg);
 }
-
 .roberto{
-    background-image: url(../img/img-roberto.jpg);
+    background-image: url(../../img/img-roberto.jpg);
 }
 
 @media screen and (max-width: 650px){
