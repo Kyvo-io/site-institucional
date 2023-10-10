@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="assets/css/Monitro/modaisDashboard.css">
     <link rel="stylesheet" href="assets/css/Monitro/cadastroServidor.css">
     <link rel="stylesheet" href="assets/css/Monitro/cadastroUsuario.css">
+    <link rel="stylesheet" href="assets/css/Monitro/dashboardInformacoes.css">
 </head>
 <body>
     <div class="sideBar">
@@ -22,11 +23,11 @@
         <div class="imgUser">
             <img src="assets/img/img-carlos.jpg" alt="">
         </div>
-        <div class="linksSideBar" onclick="">Geolocalização</div>
-        <div class="linksSideBar" onclick="">Dashboard Geral</div>
-        <div class="linksSideBar" onclick="">Cadastrar Suporte</div>
-        <div class="linksSideBar" onclick="">Cadastrar Servidor</div>
-        <div class="linksSideBar"id="botaoSair" onclick="">Sair</div>
+        <div class="linksSideBar" ><a href="#geolocalizacao">Geolocalização</a></div>
+        <div class="linksSideBar" ><a href="#dashGeral">Dashboard Geral</a></div>
+        <div class="linksSideBar" ><a href="#cadastroUsuario">Cadastrar Suporte</a></div>
+        <div class="linksSideBar" ><a href="#cadastroServidor">Cadastrar Servidor</a></div>
+        <div class="linksSideBar"id="botaoSair" ><a href="#home">Sair</a></div>
     </div>  
 
     
@@ -58,7 +59,7 @@
           </div>
     </div>
 
-        <div class="containerGeolocalizacao">
+        <div class="containerGeolocalizacao" id="geolocalizacao">
             <div class="GeolocalizacaoLeft">
                 <span>Dashboard de Geolocalização Mundial: Brasil</span>
                 <div class="mapaDinamico"></div>
@@ -103,7 +104,7 @@
             </div>
         </div>
 
-        <div class="dashboardGeral">
+        <div class="dashboardGeral" id="dashGeral">
             <div class="dashboardGeralLeft">
                 <span>Máquinas monitoradas em tempo real</span>
                 <div class="maquinasCadastradas">
@@ -188,7 +189,7 @@
         </div>
 
 
-        <div class="cadastroServidor">
+        <div class="cadastroServidor" id="cadastroServidor">
           <span>Cadastrar Servidor</span>
           <div class="containerCadastroServidor">
             <input type="text" class="inputCadastroServidor" placeholder="Nome Servidor">
@@ -201,7 +202,7 @@
         </div>
 
 
-        <div class="cadastroUsuario">
+        <div class="cadastroUsuario" id="cadastroUsuario">
           <span>Cadastrar Usuário</span>
           <div class="containerCadastroUsuario">
             <input type="text" class="inputCadastroUsuario" placeholder="Nome Usuário">
@@ -212,11 +213,140 @@
             <div class="botaoCadastroUsuario">Cadastrar</div>
           </div>
         </div>
+
+
+        <div class="modalDashEspecifica" id="ModalEspecifica">
+          <div class="ModalEspecifica">
+            <div class="tituloModal">
+            <div class="nomeMonitro">
+              <img src="assets/img/Group 1 fundo azul.png" alt="">
+              monitro
+            </div>
+            <div class="botaoFechar" onclick="trocarExibicaoModalEspecifica() ">
+              <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              class="bi bi-x-lg"
+              viewBox="0 0 16 16">
+              <path
+                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+            </svg>
+            </div>
+          </div>
+          <div class="containerDetalhesEspecifica">
+          <div class="detalhesMonitoramentoLeft">
+          <div class="descricaoMaquina">
+          </div>
+          <div class="descricaoCPU">
+            <div class="niveisAlertaCPU">
+              <p>Componente Monitorado: CPU</p>
+              <p><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" color="red"class="bi bi-exclamation-triangle-fill" viewBox="0 0 16 16">
+                <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+              </svg>
+              Nível Alto</p>
+              <p><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" color="orange"class="bi bi-exclamation-triangle-fill" viewBox="0 0 16 16">
+                  <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                </svg>
+                Nível Médio</p>
+              <p><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" color="green" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+              </svg>
+              Nível Baixo</p>
+            </div>
+            <div class="graficoCPU">
+
+            </div>
+          </div>
+
+          <div class="descricaoRAM">
+            <div class="niveisAlertaRAM">
+              <p>Componente Monitorado: RAM</p>
+              <p><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" color="red"class="bi bi-exclamation-triangle-fill" viewBox="0 0 16 16">
+                <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+              </svg>
+              Nível Alto</p>
+              <p><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" color="orange"class="bi bi-exclamation-triangle-fill" viewBox="0 0 16 16">
+                  <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                </svg>
+                Nível Médio</p>
+              <p><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" color="green" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+              </svg>
+              Nível Baixo</p>
+            </div>
+            <div class="graficoRAM">
+          
+            </div>
+          </div>
+          </div>
+          </div>
+          <div class="detalhesMonitoramentoRight"></div>
+          </div>
+          <div class="navegacao">
+            <div class="slides">
+              <input type="radio" class="radio-botao" id="botao1" name="grupoBotoes" />
+              <input type="radio" class="radio-botao" id="botao2" name="grupoBotoes" />
+            </div>
+            <div class="navegacaoManual">
+              <label class="botaoManual" for="botao1"></label>
+              <label class="botaoManual" for="botao2"></label>
+            </div>
+          </div>
+          </div>
+
+
+
+
+          <div class="modalDashDetalhes" id="ModalDetalhes">
+            <div class="ModalDetalhes">
+              <div class="tituloModal">
+              <div class="nomeMonitro">
+                <img src="assets/img/Group 1 fundo azul.png" alt="">
+                monitro
+              </div>
+              <div class="botaoFechar" onclick="trocarExibicaoModalDetalhes()">
+                <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                class="bi bi-x-lg"
+                viewBox="0 0 16 16">
+                <path
+                  d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+              </svg>
+              </div>
+            </div>
+            <div class="detalhesServidorEmpresa">
+            <div class="descricoesServidor">
+
+            </div>
+            <div class="descricoesEmpresa">
+              
+            </div>
+          </div>
+
+          <div class="outrosDetalhes">
+            <div class="detalhes"></div>
+          </div>
+            
+
+
+            <div class="navegacao">
+              <div class="slides">
+                <input type="radio" class="radio-botao" id="botao1" name="grupoBotoes" />
+                <input type="radio" class="radio-botao" id="botao2" name="grupoBotoes" />
+              </div>
+              <div class="navegacaoManual">
+                <label class="botaoManual" for="botao1"></label>
+                <label class="botaoManual" for="botao2"></label>
+              </div>
+            </div>
+            </div>
+
+        </div>
        
 </div>
 </body>
 </html>
 
 <script src="assets/js/lightDark.js"></script>
-<script src="assets/js/modaisDashboard.js"></script>
-
+<script src="assets/js/modaisMonitro.js"></script>

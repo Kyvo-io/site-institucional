@@ -537,17 +537,15 @@
 
     navLinks.forEach((link) => {
         link.addEventListener("click", (e) => {
-            e.preventDefault(); // Impedir o comportamento padrão do link
+            e.preventDefault();
 
             const targetId = link.getAttribute("href").substring(1);
 
-            // Ocultar todas as seções de conteúdo
             const sections = document.querySelectorAll(".containerHome, .containerSobreNos, .containerIntegrantes, .containerSolucao, .containerContato");
             sections.forEach((section) => {
                 section.style.display = "none";
             });
 
-            // Exibir a seção correspondente
             const targetSection = document.getElementById(targetId);
             if (targetSection) {
                 targetSection.style.display = "flex";
@@ -559,4 +557,5 @@
 });
 
 </script>
+
 

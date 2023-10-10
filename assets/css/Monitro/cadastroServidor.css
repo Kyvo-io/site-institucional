@@ -1,5 +1,7 @@
+@import url(globalMonitro.css);
+
 .cadastroServidor{
-    display: flex;
+    display: none;
     font-family: "poppins";
     flex-direction: column;
     justify-content: center;

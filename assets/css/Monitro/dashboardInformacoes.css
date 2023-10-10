@@ -1,6 +1,5 @@
 @import url(globalMonitro.css);
-
-.modalDashEspecifica {
+.modalDashDetalhes {
     display: none;
     position: fixed;
     top: 0;
@@ -10,7 +9,7 @@
     background-color: rgba(0, 0, 0, 0.7);
   }
   
-  .ModalEspecifica{
+  .ModalDetalhes{
     position: absolute;
     border-radius: 15px;
     width: 90%;
@@ -22,9 +21,10 @@
     padding: 20px;
     font-family: "poppins";
   }
-  .containerDetalhesEspecifica {
+  .containerDetalhes {
     display: flex;
     width: 100%;
+    justify-content: space-around;
   }
   .tituloModal {
     width: 100%;
@@ -50,59 +50,37 @@
   .botaoFechar > svg {
     width: 25px;
   }
-  .detalhesMonitoramentoLeft {
-    width: 60%;
-    flex-direction: column;
-  }
-  .descricaoMaquina{
-    height: 15vh;
-    background-color: #4f5f7381;
-    border-radius: 15px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-  }
+  .detalhesServidorEmpresa {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
 
-  .descricaoCPU{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    justify-content: space-between;
   }
-  .niveisAlertaCPU{
-    font-weight: bold;
-    line-height: 2;
-  }
-  .graficoCPU{
-    display: flex;
-    background-color:#4f5f7381;
-    width: 500px;
-    height: 200px;
-    border-radius: 15px;
-  }
-  .descricaoRAM {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    justify-content: space-between;
+  .descricoesServidor {
+    width: 450px;
+    height: 250px;
     margin-top: 20px;
+    border-radius: 15px;
+    background-color: #4f5f7381;
   }
-  .niveisAlertaRAM {
-    font-weight: bold;
-    line-height: 2;
+  .descricoesEmpresa {
+    width: 650px;
+    height: 250px;
+    margin-top: 20px;
+    border-radius: 15px;
+    background-color: #4f5f7381;
   }
-  .graficoRAM {
+  .outrosDetalhes {
     display: flex;
-    background-color:#4f5f7381;
-    width: 500px;
-    height: 200px;
-    border-radius: 15px;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
   }
-  .detalhesMonitoramentoRight{
-    width: 30%;
-    height: 500px;
+  .detalhes {
+    width: 1220px;
+    height: 250px;
+    margin-top: 20px;
     border-radius: 15px;
-    margin-top: 40px;
     background-color: #4f5f7381;
   }
