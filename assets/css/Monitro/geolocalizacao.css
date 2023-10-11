@@ -1,7 +1,7 @@
 
 @import url(globalMonitro.css);
 .containerGeolocalizacao{
-    display: none;
+    display: flex;
     font-family: "poppins";
     color: var(--branco-light-mode);
 }

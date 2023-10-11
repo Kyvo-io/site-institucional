@@ -1,7 +1,7 @@
 @import url(globalMonitro.css);
 
 .dashboardGeral{
-    display: flex;
+    display: none;
     font-family: "poppins";
     color: var(--branco-light-mode);
 }
@@ -9,6 +9,7 @@
     display: flex;
     width: 70%;
     flex-direction: column;
+    overflow: hidden;
 }
 .dashboardGeralLeft > span {
     font-size: 1.3rem;
@@ -19,7 +20,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    overflow-y: scroll;
+    overflow-y: auto;
+    max-height: 500px
 }
 .referenciaMaquina{
     display: flex;
@@ -44,13 +46,13 @@
     margin-top: 20px;
     justify-content: left;
     align-items: center;
-    
 }
 .cardMaquina > span {
     font-size: 1.5rem;
     margin-top: 20px;
     font-weight: bold;
 }
+
 .descricaoMaquina > p {
     justify-content: left;
     font-size: 1.1rem;
@@ -70,7 +72,6 @@ p > svg {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-top: 160px;
     width: 30%;
 }
 .dashboardGeralRight > span {
@@ -85,21 +86,27 @@ p > svg {
     height: 280px;
     background-color: var(--branco-light-mode);
     border-radius: 15px;
-    margin-top: 20px;
     justify-content: left;
     align-items: center;
-    
 }
-
-  * {
+.niveisAlerta {
+    display: flex;
+    color: var(--azul-dark-mode);
+    flex-direction: column;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.niveisAlerta > p {
+    margin-top: 10px;
+}
+*{
     scrollbar-width: auto;
-    scrollbar-color: #8f54a0 #ffffff;
-  }
-  *::-webkit-scrollbar {
-    width: 16px;
-  }
-  *::-webkit-scrollbar-thumb {
-    background-color: var(--branco-light-mode);
+}
+*::-webkit-scrollbar {
+    width: 15px;
+}
+*::-webkit-scrollbar-thumb {
+    background-color: var(--azul);
     border-radius: 10px;
     border: 3px solid var(--azul-dark-mode);
-  }
+}

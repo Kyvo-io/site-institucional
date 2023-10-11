@@ -38,7 +38,9 @@
     width: 150px;
 }
 .linksSideBar:hover{
-    background-color: var(--branco-light-mode);
+    background-color: var(--branco-light-mode);   
+}
+.linksSideBar::selection{
     color: var(--azul-dark-mode);
 }
 .containerDashboard{
