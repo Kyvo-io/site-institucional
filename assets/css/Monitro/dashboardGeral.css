@@ -1,7 +1,7 @@
 @import url(globalMonitro.css);
 
 .dashboardGeral{
-    display: none;
+    display: flex;
     font-family: "poppins";
     color: var(--branco-light-mode);
 }
@@ -90,3 +90,16 @@ p > svg {
     align-items: center;
     
 }
+
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #8f54a0 #ffffff;
+  }
+  *::-webkit-scrollbar {
+    width: 16px;
+  }
+  *::-webkit-scrollbar-thumb {
+    background-color: var(--branco-light-mode);
+    border-radius: 10px;
+    border: 3px solid var(--azul-dark-mode);
+  }

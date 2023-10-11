@@ -49,6 +49,7 @@
   }
   .botaoFechar > svg {
     width: 25px;
+    cursor: pointer;
   }
   .detalhesServidorEmpresa {
     display: flex;
