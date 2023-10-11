@@ -1,17 +1,22 @@
+/* Importação de fontes */
 @import url(globalMonitro.css);
 
-.cadastroUsuario{
+/* Estilos para o formulário de cadastro de usuário */
+.cadastroUsuario {
     display: none;
     font-family: "poppins";
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 .cadastroUsuario > span {
     font-size: 1.8rem;
     color: var(--azul);
     font-weight: bold;
 }
+
+/* Estilos para o container do formulário de cadastro de usuário */
 .containerCadastroUsuario {
     display: flex;
     background-color: var(--branco-light-mode);
@@ -25,6 +30,7 @@
     padding-top: 40px;
 }
 
+/* Estilos para os campos de entrada no formulário de cadastro de usuário */
 .inputCadastroUsuario {
     width: 350px;
     border: none;
@@ -32,6 +38,8 @@
     border-bottom: 2px solid var(--azul-dark-mode);
     font-size: 1.3rem;
 }
+
+/* Estilos para o botão de cadastro de usuário */
 .botaoCadastroUsuario {
     background-color: var(--azul-dark-mode);
     color: var(--branco-light-mode);

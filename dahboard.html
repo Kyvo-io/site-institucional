@@ -82,8 +82,10 @@
                 </div>
             </div>
             <div class="GeolocalizacaoRight">
-                <span>Quantidade de máquinas por estado</span>
-                <div class="mapaQuantidades"></div>
+                <span>Quantidade de máquinas inertes</span>
+                <div class="mapaQuantidades">
+                  <canvas id="maquinasInertes"></canvas>
+                </div>
                 
                 <span>Estados Monitorados</span>
                 <div class="legendaEstadosMonitorados">
@@ -269,7 +271,7 @@
               Nível Baixo</p>
             </div>
             <div class="graficoCPU">
-
+              <canvas id="monitoramentoCPU"></canvas>
             </div>
           </div>
 
@@ -290,7 +292,7 @@
               Nível Baixo</p>
             </div>
             <div class="graficoRAM">
-          
+              <canvas id="monitoramentoRAM"></canvas>
             </div>
           </div>
           </div>
@@ -367,6 +369,7 @@
 
 <script src="assets/js/lightDark.js"></script>
 <script src="assets/js/modaisMonitro.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script>
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -391,4 +394,73 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+
+
+  const maquinasInertes = document.getElementById('maquinasInertes');
+
+  new Chart(maquinasInertes, {
+    type: 'pie',
+    data: {
+      labels: ['Red', 'Blue'],
+      datasets: [{
+        label: "none",
+        data: [12, 19],
+        borderWidth: 1
+      }]
+    },
+    options: {
+      
+    }
+  });
+
+ 
+
+const monitoramentoCPU = document.getElementById('monitoramentoCPU');
+
+new Chart(monitoramentoCPU, {
+  type: 'line',
+  data: {
+    labels: ['Red', 'Blue'],
+    datasets: [{
+      label: '# of Votes',
+      data: [12, 19],
+      borderWidth: 1
+    }]
+  },
+  options: {
+    scales: {
+      y: {
+        beginAtZero: true
+      }
+    }
+  }
+});
+
+const monitoramentoRAM = document.getElementById('monitoramentoRAM');
+
+  new Chart(monitoramentoRAM, {
+    type: 'line',
+    data: {
+      labels: ['Red', 'Blue'],
+      datasets: [{
+        label: '# of Votes',
+        data: [12, 19],
+        borderWidth: 1
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+  });
+
+
+
+
 </script>
+
+
+

@@ -1,29 +1,37 @@
+/* Importação de fontes */
 @import url(globalMonitro.css);
 
-.dashboardGeral{
+/* Estilos para a classe .dashboardGeral */
+.dashboardGeral {
     display: none;
     font-family: "poppins";
     color: var(--branco-light-mode);
 }
+
+/* Estilos para a parte esquerda do dashboardGeral */
 .dashboardGeralLeft {
     display: flex;
     width: 70%;
     flex-direction: column;
     overflow: hidden;
 }
+
 .dashboardGeralLeft > span {
     font-size: 1.3rem;
     margin-left: 50px;
     font-weight: bold;
 }
-.maquinasCadastradas{
+
+.maquinasCadastradas {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     overflow-y: auto;
-    max-height: 500px
+    max-height: 500px;
 }
-.referenciaMaquina{
+
+/* Estilos para a referência da máquina */
+.referenciaMaquina {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -32,11 +40,14 @@
     color: var(--azul-dark-mode);
     margin-top: 20px;
 }
+
 .referenciaMaquina > span {
     font-size: 1.3rem;
     color: var(--branco-light-mode);
 }
-.cardMaquina{
+
+/* Estilos para o card da máquina */
+.cardMaquina {
     display: flex;
     flex-direction: column;
     width: 350px;
@@ -47,6 +58,7 @@
     justify-content: left;
     align-items: center;
 }
+
 .cardMaquina > span {
     font-size: 1.5rem;
     margin-top: 20px;
@@ -59,14 +71,17 @@
     margin-top: 10px;
     font-weight: bold;
 }
+
 p {
     display: flex;
     align-items: center;
 }
+
 p > svg {
     margin-right: 20px;
 }
 
+/* Estilos para a parte direita do dashboardGeral */
 .dashboardGeralRight {
     display: flex;
     align-items: center;
@@ -74,12 +89,15 @@ p > svg {
     flex-direction: column;
     width: 30%;
 }
+
 .dashboardGeralRight > span {
     font-size: 1.2rem;
     margin-top: 20px;
     font-weight: bold;
 }
-.cardAlertas{
+
+/* Estilos para o card de alertas */
+.cardAlertas {
     display: flex;
     flex-direction: column;
     width: 250px;
@@ -89,6 +107,7 @@ p > svg {
     justify-content: left;
     align-items: center;
 }
+
 .niveisAlerta {
     display: flex;
     color: var(--azul-dark-mode);
@@ -96,15 +115,20 @@ p > svg {
     font-weight: bold;
     font-size: 1.2rem;
 }
+
 .niveisAlerta > p {
     margin-top: 10px;
 }
-*{
+
+/* Estilos para barras de rolagem */
+* {
     scrollbar-width: auto;
 }
+
 *::-webkit-scrollbar {
     width: 15px;
 }
+
 *::-webkit-scrollbar-thumb {
     background-color: var(--azul);
     border-radius: 10px;
