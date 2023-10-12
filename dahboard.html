@@ -18,7 +18,12 @@
 </head>
 <body>
     <div class="sideBar">
+      <div class="titulo-e-fechar">
         <h1>monitro</h1>
+        <div class="logo-botao"><img src="assets/img/fechar-nav.svg" alt=""></div>
+      </div>
+        
+        
         <div class="imgUser">
             <img src="assets/img/img-carlos.jpg" alt="">
         </div>
@@ -35,6 +40,9 @@
     <div class="containerDashboard">
     <div class="navBarDashboard">
         <div class="containerNavDashboard">
+          <div class="botao-fechar">
+            <img src="assets/img/menu.png" alt=""/>
+          </div>
             <h2>Olá, Carlos Henrique !</h2>
         </div>
         <div class="modoLightDark">
@@ -461,6 +469,21 @@ const monitoramentoRAM = document.getElementById('monitoramentoRAM');
 
 
 </script>
+
+<script>
+  const nav = document.querySelector(".sideBar");
+  const botao = document.querySelector(".logo-botao");
+  const botaoNav = document.querySelector(".botao-fechar");
+  
+  function alternar() {
+    nav.classList.toggle("barra-lateral");
+  }
+
+  botao.addEventListener("click", alternar);
+  botaoNav.addEventListener("click", alternar)
+
+</script>
+
 
 
 

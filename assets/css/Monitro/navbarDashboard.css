@@ -3,15 +3,28 @@
 
 /* Estilos para a barra lateral */
 .sideBar {
+    position: absolute;
+    transform: translateX(-200%);
     width: 20%;
-    height: 707px;
+    height: 100%;
     background-color: var(--azul);
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-.sideBar > h1 {
+.titulo-e-fechar {
+    display: flex;
+}
+
+.titulo-e-fechar img {
+    width: 30px;
+    position: absolute;
+    left: 85%;
+}
+
+.titulo-e-fechar > h1 {
     font-family: "baloo 2";
     color: var(--azul-dark-mode);
     font-weight: bold;
@@ -56,7 +69,7 @@
 }
 
 .containerDashboard {
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -78,3 +91,18 @@
     font-family: "poppins";
     margin-left: 30px;
 }
+
+.logo-botao img {
+    width: 30px;
+}
+
+.botao-fechar img {
+    width: 60px;
+}
+
+
+.barra-lateral {
+    transform: translateX(0);
+
+}
+
